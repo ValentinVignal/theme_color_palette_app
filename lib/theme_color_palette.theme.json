@@ -1,0 +1,17 @@
+{
+  "shared": [
+    {
+      "name": "ColorPalette",
+      "values": [
+        {
+          "name": "white",
+          "value": "ffffffff"
+        },
+        {
+          "name": "black",
+          "value": "ff000000"
+        }
+      ]
+    }
+  ]
+}

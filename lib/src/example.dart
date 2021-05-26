@@ -25,4 +25,7 @@ class Order {
     this.price,
   );
 
+  @override
+  String toString() => details();
+
 }
