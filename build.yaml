@@ -1,0 +1,7 @@
+targets:
+  $default:
+    builders:
+      theme_color_palette|infoGeneratorBuilder:
+        enabled: true
+        generate_for:
+          - lib/src/*

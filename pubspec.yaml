@@ -21,17 +21,19 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
-
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  theme_color_palette:
+    path: ../theme_color_palette
+
+
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  analyzer: 1.4.0
+  build_runner: ^2.0.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
