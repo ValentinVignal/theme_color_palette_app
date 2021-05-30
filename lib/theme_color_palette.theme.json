@@ -2,16 +2,77 @@
   "shared": [
     {
       "name": "ColorPalette",
+      "type": "collection",
       "values": [
         {
+          "type": "color",
           "name": "white",
           "value": "ffffffff"
         },
         {
+          "type": "color",
           "name": "black",
           "value": "ff000000"
+        },
+        {
+          "type": "color",
+          "name": "red",
+          "value": "ffff0000"
+        },
+        {
+          "name": "NestedColorPalette",
+          "type": "collection",
+          "values": [
+            {
+              "type": "color",
+              "name": "white",
+              "value": "ff04ffff"
+            },
+            {
+              "type": "color",
+              "name": "black",
+              "value": "ff009300"
+            }
+
+          ]
         }
+
       ]
     }
-  ]
+
+  ],
+  "specific": {
+    "themes": ["Dark", "Light", "Grey"],
+    "values": [
+      {
+        "name": "ColorPalette",
+        "values": [
+          {
+            "name": "white",
+            "value": "ff0f0fff"
+          },
+          {
+            "name": "black",
+            "value": {
+            }
+          }
+        ]
+      },
+      {
+        "name": "ColorPalette1",
+        "values": [
+          {
+            "name": "myColor",
+            "value": "ffef5f11"
+          },
+          {
+            "name": "coolColor",
+            "value": "ff099460"
+          }
+        ]
+      }
+    ]
+  }
+
+
 }

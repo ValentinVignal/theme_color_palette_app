@@ -1,5 +1,4 @@
 
-part 'example.g.dart';
 
 const myStr = 'Lorem';
 final myInt = 12;
@@ -25,7 +24,5 @@ class Order {
     this.price,
   );
 
-  @override
-  String toString() => details();
 
 }
