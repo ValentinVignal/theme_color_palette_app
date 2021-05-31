@@ -1,4 +1,5 @@
 {
+  "themes": ["Dark", "Light", "Grey"],
   "shared": [
     {
       "name": "ColorPalette",
@@ -41,38 +42,22 @@
     }
 
   ],
-  "specific": {
-    "themes": ["Dark", "Light", "Grey"],
-    "values": [
-      {
-        "name": "ColorPalette",
-        "values": [
-          {
-            "name": "white",
-            "value": "ff0f0fff"
-          },
-          {
-            "name": "black",
-            "value": {
-            }
-          }
-        ]
-      },
-      {
-        "name": "ColorPalette1",
-        "values": [
-          {
-            "name": "myColor",
-            "value": "ffef5f11"
-          },
-          {
-            "name": "coolColor",
-            "value": "ff099460"
-          }
-        ]
-      }
-    ]
-  }
-
-
+  "specific": [
+    {
+      "name": "TextEmphasis",
+      "type": "collection",
+      "values": [
+        {
+          "name": "white",
+          "type": "color",
+          "value": "ff0f0fff"
+        },
+        {
+          "name": "black",
+          "type": "color",
+          "value": "ff89503d"
+        }
+      ]
+    }
+  ]
 }
