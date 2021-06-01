@@ -10,7 +10,7 @@ class ThemeColorPalette {
 	const ThemeColorPalette.grey(): textEmphasis = const ThemeColorPalette$TextEmphasis.grey();
 
 	/// A normal color palette
-	static const colorPalette = const ThemeColorPalette$ColorPalette();
+	final colorPalette = const ThemeColorPalette$ColorPalette();
 	/// To emphasis the texts
 	final ThemeColorPalette$TextEmphasis textEmphasis;
 }
@@ -21,13 +21,13 @@ class ThemeColorPalette$ColorPalette {
 	const ThemeColorPalette$ColorPalette();
 
 	/// This is white
-	static const white = const Color(0xffffffff);
+	final white = const Color(0xffffffff);
 	/// This is black
-	static const black = const Color(0xff000000);
+	final black = const Color(0xff000000);
 	/// This is red
-	static const red = const Color(0xffff0000);
+	final red = const Color(0xffff0000);
 	/// My awesome nested color palette
-	static const nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette();
+	final nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette();
 }
 
 /// My awesome nested color palette
@@ -36,39 +36,43 @@ class ThemeColorPalette$ColorPalette$NestedColorPalette {
 	const ThemeColorPalette$ColorPalette$NestedColorPalette();
 
 	/// Is it really white?
-	static const white = const Color(0xff04ffff);
+	final white = const Color(0xff04ffff);
 	/// Not sure it is black...
-	static const black = const Color(0xff009300);
+	final black = const Color(0xff009300);
 }
 
 /// To emphasis the texts
 class ThemeColorPalette$TextEmphasis {
 	/// To emphasis the texts
-	const ThemeColorPalette$TextEmphasis.dark(): white = const Color(0xff0f0fff), black = const Color(0xff89503d), reversed = const ThemeColorPalette$TextEmphasis$Reversed.dark();
+	const ThemeColorPalette$TextEmphasis.dark(): reversed = const ThemeColorPalette$TextEmphasis$Reversed.dark(), fontSize2 = 12.0;
 	/// To emphasis the texts
-	const ThemeColorPalette$TextEmphasis.light(): white = const Color(0xff0f0fff), black = const Color(0xff89503d), reversed = const ThemeColorPalette$TextEmphasis$Reversed.light();
+	const ThemeColorPalette$TextEmphasis.light(): reversed = const ThemeColorPalette$TextEmphasis$Reversed.light(), fontSize2 = 19.0;
 	/// To emphasis the texts
-	const ThemeColorPalette$TextEmphasis.grey(): white = const Color(0xff0f0fff), black = const Color(0xff89503d), reversed = const ThemeColorPalette$TextEmphasis$Reversed.grey();
+	const ThemeColorPalette$TextEmphasis.grey(): reversed = const ThemeColorPalette$TextEmphasis$Reversed.grey(), fontSize2 = 14.0;
 
 	/// White again !?
-	final Color white;
+	final white = const Color(0xff0f0fff);
 	/// This cannot be black...
-	final Color black;
+	final black = const Color(0xff89503d);
 	/// The reversed text emphasis
 	final ThemeColorPalette$TextEmphasis$Reversed reversed;
+	/// Shared font size
+	final fontSize = 12.0;
+	/// Custom font size
+	final double fontSize2;
 }
 
 /// The reversed text emphasis
 class ThemeColorPalette$TextEmphasis$Reversed {
 	/// The reversed text emphasis
-	const ThemeColorPalette$TextEmphasis$Reversed.dark(): high = const Color(0xffefe9f), low = const Color(0xff83513d);
+	const ThemeColorPalette$TextEmphasis$Reversed.dark(): low = const Color(0xff222222);
 	/// The reversed text emphasis
-	const ThemeColorPalette$TextEmphasis$Reversed.light(): high = const Color(0xffefe9f), low = const Color(0xff83513d);
+	const ThemeColorPalette$TextEmphasis$Reversed.light(): low = const Color(0xff999999);
 	/// The reversed text emphasis
-	const ThemeColorPalette$TextEmphasis$Reversed.grey(): high = const Color(0xffefe9f), low = const Color(0xff83513d);
+	const ThemeColorPalette$TextEmphasis$Reversed.grey(): low = const Color(0xff555555);
 
 	/// Reversed high
-	final Color high;
+	final high = const Color(0xffefe9f);
 	/// Reversed low
 	final Color low;
 }
