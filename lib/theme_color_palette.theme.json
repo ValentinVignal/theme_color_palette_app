@@ -1,61 +1,105 @@
 {
-  "themes": ["Dark", "Light", "Grey"],
-  "shared": [
+  "themes": [
+    "Dark",
+    "Light",
+    "Grey"
+  ],
+  "name": "ThemeColorPalette",
+  "shared": false,
+  "description": "The Theme Color Palette",
+  "values": [
     {
       "name": "ColorPalette",
       "type": "collection",
+      "shared": true,
+      "description": "A normal color palette",
       "values": [
         {
           "type": "color",
           "name": "white",
+          "description": "This is white",
+          "shared": true,
           "value": "ffffffff"
         },
         {
           "type": "color",
+          "description": "This is black",
           "name": "black",
+          "shared": true,
           "value": "ff000000"
         },
         {
           "type": "color",
+          "description": "This is red",
           "name": "red",
+          "shared": true,
           "value": "ffff0000"
         },
         {
           "name": "NestedColorPalette",
+          "description": "My awesome nested color palette",
+          "shared": true,
           "type": "collection",
           "values": [
             {
+              "shared": true,
               "type": "color",
+              "description": "Is it really white?",
               "name": "white",
               "value": "ff04ffff"
             },
             {
               "type": "color",
+              "description": "Not sure it is black...",
+              "shared": true,
               "name": "black",
               "value": "ff009300"
             }
-
           ]
         }
-
       ]
-    }
-
-  ],
-  "specific": [
+    },
     {
+      "shared": false,
       "name": "TextEmphasis",
       "type": "collection",
+      "description": "To emphasis the texts",
       "values": [
         {
+          "shared": false,
+          "description": "White again !?",
           "name": "white",
           "type": "color",
           "value": "ff0f0fff"
         },
         {
           "name": "black",
+          "description": "This cannot be black...",
+          "shared": false,
           "type": "color",
           "value": "ff89503d"
+        },
+        {
+          "name": "Reversed",
+          "description": "The reversed text emphasis",
+          "shared": false,
+          "type": "collection",
+          "values": [
+            {
+              "shared": false,
+              "description": "Reversed high",
+              "name": "high",
+              "type": "color",
+              "value": "ffefe9f"
+            },
+            {
+              "name": "low",
+              "description": "Reversed low",
+              "shared": false,
+              "type": "color",
+              "value": "ff83513d"
+            }
+          ]
         }
       ]
     }
