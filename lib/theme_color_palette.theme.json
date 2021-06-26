@@ -5,190 +5,20 @@
     "Grey"
   ],
   "name": "ThemeColorPalette",
-  "shared": false,
   "description": "The Theme Color Palette",
-  "values": [
+  "collections": [
     {
       "name": "ColorPalette",
-      "type": "collection",
-      "shared": true,
       "description": "A normal color palette",
       "values": [
         {
           "type": "color",
           "name": "white",
           "description": "This is white",
-          "shared": true,
-          "value": {
-            "import": [],
-            "value": "ffffffff"
-          }
-        },
-        {
-          "type": "color",
-          "description": "This is black",
-          "name": "black",
-          "shared": true,
-          "value": {
-            "import": [],
-            "value": "ff000000"
-          }
-        },
-        {
-          "type": "color",
-          "description": "This is red",
-          "name": "red",
-          "shared": true,
-          "value": {
-            "import": [],
-            "value": "ffff0000"
-          }
-        },
-        {
-          "name": "NestedColorPalette",
-          "description": "My awesome nested color palette",
-          "shared": true,
-          "type": "collection",
-          "values": [
-            {
-              "shared": true,
-              "type": "color",
-              "description": "Is it really white?",
-              "name": "white",
-              "value": {
-                "import": [],
-                "value": "ff04ffff"
-              }
-            },
-            {
-              "type": "color",
-              "description": "Not sure it is black...",
-              "shared": true,
-              "name": "black",
-              "value": {
-                "import": [],
-                "value": "ff009300"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "shared": true,
-      "name": "ThemeColors",
-      "type": "collection",
-      "description": "Basic theme colors",
-      "values": [
-        {
-          "shared": true,
-          "description": "White again !?",
-          "name": "white",
-          "type": "color",
-          "value": {
-            "import": ["ThemeColorPalette", "NestedColorPalette", "white"],
-            "value": null
-          }
-        }
-        
-      ]
-    },
-    {
-      "shared": false,
-      "name": "TextEmphasis",
-      "type": "collection",
-      "description": "To emphasis the texts",
-      "values": [
-        {
-          "shared": true,
-          "description": "White again !?",
-          "name": "white",
-          "type": "color",
-          "value": {
-            "import": [],
-            "value": "ff0f0fff"
-          }
-        },
-        {
-          "name": "black",
-          "description": "This cannot be black...",
-          "shared": true,
-          "type": "color",
-          "value": {
-            "import": [],
-            "value": "ff89503d"
-          }
-        },
-        {
-          "name": "Reversed",
-          "description": "The reversed text emphasis",
-          "shared": false,
-          "type": "collection",
-          "values": [
-            {
-              "shared": true,
-              "description": "Reversed high",
-              "name": "high",
-              "type": "color",
-              "value": {
-                "import": [],
-                "value": "ffefe9f"
-              }
-            },
-            {
-              "name": "low",
-              "description": "Reversed low",
-              "shared": false,
-              "type": "color",
-              "value": {
-                "import": [],
-                "value": "ff83513d"
-              },
-              "values": {
-                "Dark": {
-                  "import": [],
-                  "value": "ff222222"
-                },
-                "Grey": {
-                  "import": [],
-                  "value": "ff555555"
-                },
-                "Light": {
-                  "import": [],
-                  "value": "ff999999"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "shared": true,
-          "description": "Shared font size",
-          "name": "fontSize",
-          "type": "double",
-          "value": {
-            "import": [],
-            "value": 12.0
-          }
-        },
-        {
-          "shared": false,
-          "description": "Custom font size",
-          "name": "fontSize2",
-          "type": "double",
           "values": {
-            "Dark": {
-              "import": [],
-              "value": 12.0
-            },
-            "Grey": {
-              "import": [],
-              "value": 14.0
-            },
-            "Light": {
-              "import": [],
-              "value": 19.0
-            }
+            "Dark": "ff999999",
+            "Light": "ffffffff",
+            "Grey": "ffbbbbbb"
           }
         }
       ]
