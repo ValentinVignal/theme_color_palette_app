@@ -20,6 +20,44 @@
             "Light": "ffffffff",
             "Grey": "ffbbbbbb"
           }
+        },
+        {
+          "name": "NestedColorPalette",
+          "description": "A nested color palette",
+          "values": [
+            {
+              "type": "color",
+              "name": "blue",
+              "description": "This is blue",
+              "values": {
+                "Dark": "ff000099",
+                "Light": "ff0000ff",
+                "Grey": "ff0000bb"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SecondColorPalette",
+      "description": "A normal color palette",
+      "values": [
+        {
+          "type": "color",
+          "name": "white",
+          "description": "This is white",
+          "values": {
+            "Dark": "ff999999",
+            "Light": "ffffffff",
+            "Grey": {
+              "import": [
+                "ColorPalette",
+                "NestedColorPalette",
+                "blue"
+              ]
+            }
+          }
         }
       ]
     }
