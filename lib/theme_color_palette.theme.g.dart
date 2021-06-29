@@ -54,14 +54,16 @@ const _themeColorPalette$ColorPalette$White$$grey = const Color(0xffbbbbbb);
 /// A nested color palette
 class ThemeColorPalette$ColorPalette$NestedColorPalette {
 	/// A nested color palette
-	const ThemeColorPalette$ColorPalette$NestedColorPalette.dark(): blue = _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$dark;
+	const ThemeColorPalette$ColorPalette$NestedColorPalette.dark(): blue = _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$dark, doubleVariable = _themeColorPalette$ColorPalette$NestedColorPalette$DoubleVariable$$dark;
 	/// A nested color palette
-	const ThemeColorPalette$ColorPalette$NestedColorPalette.light(): blue = _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$light;
+	const ThemeColorPalette$ColorPalette$NestedColorPalette.light(): blue = _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$light, doubleVariable = _themeColorPalette$ColorPalette$NestedColorPalette$DoubleVariable$$light;
 	/// A nested color palette
-	const ThemeColorPalette$ColorPalette$NestedColorPalette.grey(): blue = _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$grey;
+	const ThemeColorPalette$ColorPalette$NestedColorPalette.grey(): blue = _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$grey, doubleVariable = _themeColorPalette$ColorPalette$NestedColorPalette$DoubleVariable$$grey;
 
 	/// This is blue
 	final Color blue;
+	/// This is a double
+	final double doubleVariable;
 }
 
 const _themeColorPalette$ColorPalette$NestedColorPalette$$dark = const ThemeColorPalette$ColorPalette$NestedColorPalette.dark()
@@ -74,19 +76,26 @@ const _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$light = const Col
 const _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$grey = const Color(0xff0000bb);
 
 
+const _themeColorPalette$ColorPalette$NestedColorPalette$DoubleVariable$$dark = 1.0;
+const _themeColorPalette$ColorPalette$NestedColorPalette$DoubleVariable$$light = 1.0;
+const _themeColorPalette$ColorPalette$NestedColorPalette$DoubleVariable$$grey = 2.3;
+
+
 // -------------------- ThemeColorPalette$SecondColorPalette --------------------
 
 /// A normal color palette
 class ThemeColorPalette$SecondColorPalette {
 	/// A normal color palette
-	const ThemeColorPalette$SecondColorPalette.dark(): white = _themeColorPalette$SecondColorPalette$White$$dark;
+	const ThemeColorPalette$SecondColorPalette.dark(): white = _themeColorPalette$SecondColorPalette$White$$dark, intVariable = _themeColorPalette$SecondColorPalette$IntVariable$$dark;
 	/// A normal color palette
-	const ThemeColorPalette$SecondColorPalette.light(): white = _themeColorPalette$SecondColorPalette$White$$light;
+	const ThemeColorPalette$SecondColorPalette.light(): white = _themeColorPalette$SecondColorPalette$White$$light, intVariable = _themeColorPalette$SecondColorPalette$IntVariable$$light;
 	/// A normal color palette
-	const ThemeColorPalette$SecondColorPalette.grey(): white = _themeColorPalette$SecondColorPalette$White$$grey;
+	const ThemeColorPalette$SecondColorPalette.grey(): white = _themeColorPalette$SecondColorPalette$White$$grey, intVariable = _themeColorPalette$SecondColorPalette$IntVariable$$grey;
 
 	/// This is white
 	final Color white;
+	/// This is an int
+	final int intVariable;
 }
 
 const _themeColorPalette$SecondColorPalette$$dark = const ThemeColorPalette$SecondColorPalette.dark()
@@ -97,5 +106,10 @@ const _themeColorPalette$SecondColorPalette$$grey = const ThemeColorPalette$Seco
 const _themeColorPalette$SecondColorPalette$White$$dark = const Color(0xff999999);
 const _themeColorPalette$SecondColorPalette$White$$light = const Color(0xffffffff);
 const _themeColorPalette$SecondColorPalette$White$$grey = _themeColorPalette$ColorPalette$NestedColorPalette$Blue$$grey;
+
+
+const _themeColorPalette$SecondColorPalette$IntVariable$$dark = 32;
+const _themeColorPalette$SecondColorPalette$IntVariable$$light = 24;
+const _themeColorPalette$SecondColorPalette$IntVariable$$grey = 32;
 
 

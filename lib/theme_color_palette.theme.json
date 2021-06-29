@@ -34,6 +34,15 @@
                 "Light": "ff0000ff",
                 "Grey": "ff0000bb"
               }
+            },
+            {
+              "type": "double",
+              "name": "doubleVariable",
+              "description": "This is a double",
+              "values": {
+                "Dark": 1.0,
+                "Grey": 2.3
+              }
             }
           ]
         }
@@ -57,6 +66,15 @@
                 "blue"
               ]
             }
+          }
+        },
+        {
+          "type": "int",
+          "name": "intVariable",
+          "description": "This is an int",
+          "values": {
+            "Dark": 32,
+            "Light": 24
           }
         }
       ]
