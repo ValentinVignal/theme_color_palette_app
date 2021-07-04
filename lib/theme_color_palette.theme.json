@@ -43,6 +43,15 @@
                 "Dark": 1.0,
                 "Grey": 2.3
               }
+            },
+            {
+              "type": "fontWeight",
+              "name": "ourFontWeight",
+              "description": "This is a font weight",
+              "values": {
+                "Dark": "bold",
+                "Light": "w300"
+              }
             }
           ]
         }
@@ -58,7 +67,14 @@
           "description": "This is white",
           "values": {
             "Dark": "ff999999",
-            "Light": "ffffffff",
+            "Light": {
+              "import": [
+                "ColorPalette",
+                "NestedColorPalette",
+                "blue"
+              ],
+              "withOpacity": 0.38
+            },
             "Grey": {
               "import": [
                 "ColorPalette",
