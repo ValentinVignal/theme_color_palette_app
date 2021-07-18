@@ -23,14 +23,14 @@ class ThemeColorPalette {
 /// A normal color palette
 class ThemeColorPalette$ColorPalette {
 	/// A normal color palette
-	const ThemeColorPalette$ColorPalette.dark(): white = const Color(0xff999999), nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette.dark();
+	const ThemeColorPalette$ColorPalette.dark(): cardColor = const Color(0xff999999), nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette.dark();
 	/// A normal color palette
-	const ThemeColorPalette$ColorPalette.light(): white = const Color(0xffffffff), nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette.light();
+	const ThemeColorPalette$ColorPalette.light(): cardColor = const Color(0xffffffff), nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette.light();
 	/// A normal color palette
-	const ThemeColorPalette$ColorPalette.grey(): white = const Color(0xffbbbbbb), nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette.grey();
+	const ThemeColorPalette$ColorPalette.grey(): cardColor = const Color(0xffbbbbbb), nestedColorPalette = const ThemeColorPalette$ColorPalette$NestedColorPalette.grey();
 
 	/// This is white
-	final Color white;
+	final Color cardColor;
 	/// A nested color palette
 	final ThemeColorPalette$ColorPalette$NestedColorPalette nestedColorPalette;
 }
@@ -65,7 +65,7 @@ class ThemeColorPalette$SecondColorPalette {
 	/// A normal color palette
 	const ThemeColorPalette$SecondColorPalette.light(): white = const Color(0x260000ff), intVariable = 24;
 	/// A normal color palette
-	const ThemeColorPalette$SecondColorPalette.grey(): white = const Color(0xff0000bb), intVariable = 32;
+	const ThemeColorPalette$SecondColorPalette.grey(): white = const Color(0xe50000bb), intVariable = 32;
 
 	/// This is white
 	final Color white;

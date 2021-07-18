@@ -6,6 +6,14 @@
   ],
   "name": "ThemeColorPalette",
   "description": "The Theme Color Palette",
+  "constants": [
+    {
+      "name": "sharedColor",
+      "description": "This is shared",
+      "type": "color",
+      "values": "ff999999"
+    }
+  ],
   "collections": [
     {
       "name": "ColorPalette",
@@ -13,7 +21,7 @@
       "values": [
         {
           "type": "color",
-          "name": "white",
+          "name": "cardColor",
           "description": "This is white",
           "values": {
             "Dark": "ff999999",
@@ -80,7 +88,14 @@
                 "ColorPalette",
                 "NestedColorPalette",
                 "blue"
-              ]
+              ],
+              "withOpacity": {
+                "import": [
+                  "ColorPalette",
+                  "NestedColorPalette",
+                  "doubleVariable"
+                ]
+              }
             }
           }
         },
