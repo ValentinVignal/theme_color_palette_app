@@ -1,93 +1,229 @@
 {
   "themes": [
-    "Dark",
-    "Light",
-    "Grey"
+    "light",
+    "dark"
   ],
   "name": "ThemeColorPalette",
   "description": "The Theme Color Palette",
   "constants": [
     {
-      "name": "sharedColor",
-      "description": "This is shared",
-      "type": "color",
-      "value": "ff999999"
-    },
-    {
-      "name": "sharedDouble",
-      "description": "This is shared",
+      "name": "radius",
+      "description": "Default radius",
       "type": "double",
-      "value": 0.8
+      "value": 4.0
     },
     {
-      "name": "sharedColor2",
-      "description": "This is shared",
-      "type": "color",
-      "value": {
-        "import": [
-          ".shared",
-          "sharedColor"
-        ],
-        "withOpacity": {
-          "import": [
-            ".shared",
-            "sharedDouble"
-          ]
-        }
-      }
+      "name": "defaultPadding",
+      "description": "Default Padding",
+      "type": "double",
+      "value": 16.0
+    },
+    {
+      "name": "highOpacity",
+      "description": "Medium Opacity",
+      "type": "double",
+      "value": 1.0
+    },
+    {
+      "name": "mediumOpacity",
+      "description": "Medium Opacity",
+      "type": "double",
+      "value": 0.87
+    },
+    {
+      "name": "lowOpacity",
+      "description": "Medium Opacity",
+      "type": "double",
+      "value": 0.6
+    },
+    {
+      "name": "disabledOpacity",
+      "description": "Medium Opacity",
+      "type": "double",
+      "value": 0.38
     }
   ],
   "collections": [
     {
-      "name": "ColorPalette",
-      "description": "A normal color palette",
+      "name": "accentColor",
+      "description": "Accent color",
+      "flutter": true,
+      "type": "color",
+      "values": {
+        "light": "ff2864ac"
+      }
+    },
+    {
+      "name": "secondaryColor",
+      "description": "Secondary color",
+      "type": "color",
+      "values": {
+        "light": "ff7ec141"
+      }
+    },
+    {
+      "name": "textEmphasis",
+      "description": "The different text emphasis",
       "values": [
         {
+          "name": "accent",
+          "description": "Accent Color",
           "type": "color",
-          "name": "cardColor",
-          "description": "This is white",
           "values": {
-            "Dark": "ff999999",
-            "Light": "ffffffff",
-            "Grey": "ffbbbbbb"
+            "light": "ff2864ac"
           }
         },
         {
-          "name": "NestedColorPalette",
-          "description": "A nested color palette",
+          "name": "success",
+          "description": "Success Color",
+          "type": "color",
+          "values": {
+            "light": "ff7ec141"
+          }
+        },
+        {
+          "name": "error",
+          "description": "Error Color",
+          "type": "color",
+          "values": {
+            "light": "ffe54d39"
+          }
+        },
+        {
+          "name": "high",
+          "description": "High emphasis",
+          "type": "color",
+          "values": {
+            "light": "ff000000"
+          }
+        },
+        {
+          "name": "medium",
+          "description": "Medium emphasis",
+          "type": "color",
+          "values": {
+            "light": {
+              "import": [
+                "textEmphasis",
+                "high"
+              ],
+              "withOpacity": {
+                "import": [
+                  ".shared",
+                  "mediumOpacity"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "low",
+          "description": "Low emphasis",
+          "type": "color",
+          "values": {
+            "light": {
+              "import": [
+                "textEmphasis",
+                "high"
+              ],
+              "withOpacity": {
+                "import": [
+                  ".shared",
+                  "lowOpacity"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "disabled",
+          "description": "Disabled emphasis",
+          "type": "color",
+          "values": {
+            "light": {
+              "import": [
+                "textEmphasis",
+                "high"
+              ],
+              "withOpacity": {
+                "import": [
+                  ".shared",
+                  "disabledOpacity"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "reversed",
+          "description": "Reversed text emphasis",
           "values": [
             {
+              "name": "high",
+              "description": "Reversed high emphasis",
               "type": "color",
-              "name": "blue",
-              "description": "This is blue",
               "values": {
-                "Dark": "ff000099",
-                "Light": "ff0000ff",
-                "Grey": "ff0000bb"
+                "light": "ffffffff"
               }
             },
             {
-              "type": "double",
-              "name": "doubleVariable",
-              "description": "This is a double",
+              "name": "medium",
+              "description": "Reversed medium emphasis",
+              "type": "color",
               "values": {
-                "Dark": 1.0,
-                "Grey": 2.3,
-                "Light": {
+                "light": {
                   "import": [
-                    ".shared",
-                    "sharedDouble"
-                  ]
+                    "textEmphasis",
+                    "reversed",
+                    "high"
+                  ],
+                  "withOpacity": {
+                    "import": [
+                      ".shared",
+                      "mediumOpacity"
+                    ]
+                  }
                 }
               }
             },
             {
-              "type": "fontWeight",
-              "name": "ourFontWeight",
-              "description": "This is a font weight",
+              "name": "low",
+              "description": "Reversed low emphasis",
+              "type": "color",
               "values": {
-                "Dark": "bold",
-                "Light": "w300"
+                "light": {
+                  "import": [
+                    "textEmphasis",
+                    "reversed",
+                    "high"
+                  ],
+                  "withOpacity": {
+                    "import": [
+                      ".shared",
+                      "lowOpacity"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "Reversed disabled emphasis",
+              "type": "color",
+              "values": {
+                "light": {
+                  "import": [
+                    "textEmphasis",
+                    "reversed",
+                    "high"
+                  ],
+                  "withOpacity": {
+                    "import": [
+                      ".shared",
+                      "disabledOpacity"
+                    ]
+                  }
+                }
               }
             }
           ]
@@ -95,46 +231,204 @@
       ]
     },
     {
-      "name": "SecondColorPalette",
-      "description": "A normal color palette",
+      "name": "iconEmphasis",
+      "description": "The different icon emphasis",
       "values": [
         {
+          "name": "high",
+          "description": "High emphasis",
           "type": "color",
-          "name": "white",
-          "description": "This is white",
           "values": {
-            "Dark": "ff999999",
-            "Light": {
+            "light": "ff000000"
+          }
+        },
+        {
+          "name": "medium",
+          "description": "Medium emphasis",
+          "type": "color",
+          "values": {
+            "light": {
               "import": [
-                "ColorPalette",
-                "NestedColorPalette",
-                "blue"
-              ],
-              "withOpacity": 0.38
-            },
-            "Grey": {
-              "import": [
-                "ColorPalette",
-                "NestedColorPalette",
-                "blue"
+                "iconEmphasis",
+                "high"
               ],
               "withOpacity": {
                 "import": [
-                  "ColorPalette",
-                  "NestedColorPalette",
-                  "doubleVariable"
+                  ".shared",
+                  "mediumOpacity"
                 ]
               }
             }
           }
         },
         {
-          "type": "int",
-          "name": "intVariable",
-          "description": "This is an int",
+          "name": "low",
+          "description": "Low emphasis",
+          "type": "color",
           "values": {
-            "Dark": 32,
-            "Light": 56
+            "light": {
+              "import": [
+                "iconEmphasis",
+                "high"
+              ],
+              "withOpacity": {
+                "import": [
+                  ".shared",
+                  "lowOpacity"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "disabled",
+          "description": "Disabled emphasis",
+          "type": "color",
+          "values": {
+            "light": {
+              "import": [
+                "iconEmphasis",
+                "high"
+              ],
+              "withOpacity": {
+                "import": [
+                  ".shared",
+                  "disabledOpacity"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "reversed",
+          "description": "Reversed icon emphasis",
+          "values": [
+            {
+              "name": "high",
+              "description": "Reversed high emphasis",
+              "type": "color",
+              "values": {
+                "light": "ffffffff"
+              }
+            },
+            {
+              "name": "medium",
+              "description": "Reversed medium emphasis",
+              "type": "color",
+              "values": {
+                "light": {
+                  "import": [
+                    "iconEmphasis",
+                    "reversed",
+                    "high"
+                  ],
+                  "withOpacity": {
+                    "import": [
+                      ".shared",
+                      "mediumOpacity"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "name": "low",
+              "description": "Reversed low emphasis",
+              "type": "color",
+              "values": {
+                "light": {
+                  "import": [
+                    "iconEmphasis",
+                    "reversed",
+                    "high"
+                  ],
+                  "withOpacity": {
+                    "import": [
+                      ".shared",
+                      "lowOpacity"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "Reversed disabled emphasis",
+              "type": "color",
+              "values": {
+                "light": {
+                  "import": [
+                    "iconEmphasis",
+                    "reversed",
+                    "high"
+                  ],
+                  "withOpacity": {
+                    "import": [
+                      ".shared",
+                      "disabledOpacity"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "border",
+      "description": "Borders",
+      "values": [
+        {
+          "name": "high",
+          "description": "High border",
+          "type": "color",
+          "values": {
+            "light": "ff5c5c5c"
+          }
+        },
+        {
+          "name": "medium",
+          "description": "Medium border",
+          "type": "color",
+          "values": {
+            "light": "ffe0e0e0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "background",
+      "description": "Backgrounds",
+      "values": [
+        {
+          "name": "disabled",
+          "description": "Disabled background",
+          "type": "color",
+          "values": {
+            "light": "fff8f8f8"
+          }
+        },
+        {
+          "name": "background1",
+          "description": "Background 1",
+          "type": "color",
+          "values": {
+            "light": "fff6f9fc"
+          }
+        }
+      ]
+    },
+    {
+      "name": "floatingActionButton",
+      "description": "Floating action button",
+      "values": [
+        {
+          "name": "disabledColor",
+          "description": "Disabled color",
+          "type": "color",
+          "values": {
+            "light": "ffadc4df"
           }
         }
       ]
