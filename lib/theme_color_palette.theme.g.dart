@@ -11,6 +11,13 @@ class ThemeColorPalette {
 	/// The Theme Color Palette
 	const ThemeColorPalette.grey(): colorPalette = const ThemeColorPalette$ColorPalette.grey(), secondColorPalette = const ThemeColorPalette$SecondColorPalette.grey();
 
+	/// This is shared
+	static const sharedColor = const Color(0xff999999)
+	/// This is shared
+	static const sharedDouble = 0.8
+	/// This is shared
+	static const sharedColor2 = const Color(0xcc999999)
+
 	/// A normal color palette
 	final ThemeColorPalette$ColorPalette colorPalette;
 	/// A normal color palette
@@ -43,7 +50,7 @@ class ThemeColorPalette$ColorPalette$NestedColorPalette {
 	/// A nested color palette
 	const ThemeColorPalette$ColorPalette$NestedColorPalette.dark(): blue = const Color(0xff000099), doubleVariable = 1.0, ourFontWeight = FontWeight.w700;
 	/// A nested color palette
-	const ThemeColorPalette$ColorPalette$NestedColorPalette.light(): blue = const Color(0xff0000ff), doubleVariable = 1.0, ourFontWeight = FontWeight.w300;
+	const ThemeColorPalette$ColorPalette$NestedColorPalette.light(): blue = const Color(0xff0000ff), doubleVariable = 0.8, ourFontWeight = FontWeight.w300;
 	/// A nested color palette
 	const ThemeColorPalette$ColorPalette$NestedColorPalette.grey(): blue = const Color(0xff0000bb), doubleVariable = 2.3, ourFontWeight = FontWeight.w700;
 
@@ -63,9 +70,9 @@ class ThemeColorPalette$SecondColorPalette {
 	/// A normal color palette
 	const ThemeColorPalette$SecondColorPalette.dark(): white = const Color(0xff999999), intVariable = 32;
 	/// A normal color palette
-	const ThemeColorPalette$SecondColorPalette.light(): white = const Color(0x260000ff), intVariable = 24;
+	const ThemeColorPalette$SecondColorPalette.light(): white = const Color(0x610000ff), intVariable = 56;
 	/// A normal color palette
-	const ThemeColorPalette$SecondColorPalette.grey(): white = const Color(0xe50000bb), intVariable = 32;
+	const ThemeColorPalette$SecondColorPalette.grey(): white = const Color(0x24b0000bb), intVariable = 32;
 
 	/// This is white
 	final Color white;
