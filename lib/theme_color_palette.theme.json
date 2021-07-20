@@ -50,7 +50,18 @@
       "flutter": true,
       "type": "color",
       "values": {
-        "light": "ff2864ac"
+        "light": "ff2864ac",
+        "dark": "ff699fcf"
+      }
+    },
+    {
+      "name": "primaryColor",
+      "description": "Primary color",
+      "flutter": true,
+      "type": "color",
+      "values": {
+        "light": "ff5182bb",
+        "dark": "ffc1dbef"
       }
     },
     {
@@ -70,7 +81,11 @@
           "description": "Accent Color",
           "type": "color",
           "values": {
-            "light": "ff2864ac"
+            "light": {
+              "import": [
+                "accentColor"
+              ]
+            }
           }
         },
         {
@@ -94,7 +109,8 @@
           "description": "High emphasis",
           "type": "color",
           "values": {
-            "light": "ff000000"
+            "light": "ff000000",
+            "dark": "ffffffffff"
           }
         },
         {
@@ -163,7 +179,8 @@
               "description": "Reversed high emphasis",
               "type": "color",
               "values": {
-                "light": "ffffffff"
+                "light": "ffffffff",
+                "dark": "ff000000"
               }
             },
             {
@@ -239,7 +256,8 @@
           "description": "High emphasis",
           "type": "color",
           "values": {
-            "light": "ff000000"
+            "light": "ff000000",
+            "dark": "ffffffff"
           }
         },
         {
@@ -308,7 +326,8 @@
               "description": "Reversed high emphasis",
               "type": "color",
               "values": {
-                "light": "ffffffff"
+                "light": "ffffffff",
+                "dark": "ff000000"
               }
             },
             {
@@ -384,7 +403,8 @@
           "description": "High border",
           "type": "color",
           "values": {
-            "light": "ff5c5c5c"
+            "light": "ff5c5c5c",
+            "dark": "fff5f5f5"
           }
         },
         {
@@ -392,7 +412,8 @@
           "description": "Medium border",
           "type": "color",
           "values": {
-            "light": "ffe0e0e0"
+            "light": "ffe0e0e0",
+            "dark": "ff474747"
           }
         }
       ]
@@ -406,7 +427,8 @@
           "description": "Disabled background",
           "type": "color",
           "values": {
-            "light": "fff8f8f8"
+            "light": "fff8f8f8",
+            "dark": "ff121212"
           }
         },
         {
@@ -414,7 +436,8 @@
           "description": "Background 1",
           "type": "color",
           "values": {
-            "light": "fff6f9fc"
+            "light": "fff6f9fc",
+            "dark": "ff2e2e2e"
           }
         }
       ]
@@ -428,7 +451,8 @@
           "description": "Disabled color",
           "type": "color",
           "values": {
-            "light": "ffadc4df"
+            "light": "ffadc4df",
+            "dark": "ff225281"
           }
         }
       ]
