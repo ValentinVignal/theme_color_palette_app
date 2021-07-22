@@ -5,22 +5,38 @@ import 'package:flutter/material.dart';
 /// The Theme Color Palette
 class ThemeColorPalette {
 	/// The Theme Color Palette
-	const ThemeColorPalette.light(): accentColor = const Color(0xff2864ac), primaryColor = const Color(0xff5182bb), secondaryColor = const Color(0xff7ec141), textEmphasis = const ThemeColorPalette$TextEmphasis.light(), iconEmphasis = const ThemeColorPalette$IconEmphasis.light(), border = const ThemeColorPalette$Border.light(), background = const ThemeColorPalette$Background.light(), floatingActionButton = const ThemeColorPalette$FloatingActionButton.light();
+	const ThemeColorPalette.light():
+		accentColor = const Color(0xff2864ac),
+		primaryColor = const Color(0xff5182bb),
+		secondaryColor = const Color(0xff7ec141),
+		textEmphasis = const ThemeColorPalette$TextEmphasis.light(),
+		iconEmphasis = const ThemeColorPalette$IconEmphasis.light(),
+		border = const ThemeColorPalette$Border.light(),
+		background = const ThemeColorPalette$Background.light(),
+		floatingActionButton = const ThemeColorPalette$FloatingActionButton.light();
 	/// The Theme Color Palette
-	const ThemeColorPalette.dark(): accentColor = const Color(0xff699fcf), primaryColor = const Color(0xffc1dbef), secondaryColor = const Color(0xff7ec141), textEmphasis = const ThemeColorPalette$TextEmphasis.dark(), iconEmphasis = const ThemeColorPalette$IconEmphasis.dark(), border = const ThemeColorPalette$Border.dark(), background = const ThemeColorPalette$Background.dark(), floatingActionButton = const ThemeColorPalette$FloatingActionButton.dark();
+	const ThemeColorPalette.dark():
+		accentColor = const Color(0xff699fcf),
+		primaryColor = const Color(0xffc1dbef),
+		secondaryColor = const Color(0xff7ec141),
+		textEmphasis = const ThemeColorPalette$TextEmphasis.dark(),
+		iconEmphasis = const ThemeColorPalette$IconEmphasis.dark(),
+		border = const ThemeColorPalette$Border.dark(),
+		background = const ThemeColorPalette$Background.dark(),
+		floatingActionButton = const ThemeColorPalette$FloatingActionButton.dark();
 
 	/// Default radius
-	static const radius = 4.0
+	static const radius = 4.0;
 	/// Default Padding
-	static const defaultPadding = 16.0
+	static const defaultPadding = 16.0;
 	/// Medium Opacity
-	static const highOpacity = 1.0
+	static const highOpacity = 1.0;
 	/// Medium Opacity
-	static const mediumOpacity = 0.87
+	static const mediumOpacity = 0.87;
 	/// Medium Opacity
-	static const lowOpacity = 0.6
+	static const lowOpacity = 0.6;
 	/// Medium Opacity
-	static const disabledOpacity = 0.38
+	static const disabledOpacity = 0.38;
 
 	/// Accent color
 	final Color accentColor;
@@ -46,9 +62,25 @@ class ThemeColorPalette {
 /// The different text emphasis
 class ThemeColorPalette$TextEmphasis {
 	/// The different text emphasis
-	const ThemeColorPalette$TextEmphasis.light(): accent = const Color(0xff2864ac), success = const Color(0xff7ec141), error = const Color(0xffe54d39), high = const Color(0xff000000), medium = const Color(0xde000000), low = const Color(0x99000000), disabled = const Color(0x61000000), reversed = const ThemeColorPalette$TextEmphasis$Reversed.light();
+	const ThemeColorPalette$TextEmphasis.light():
+		accent = const Color(0xff2864ac),
+		success = const Color(0xff7ec141),
+		error = const Color(0xffe54d39),
+		high = const Color(0xff000000),
+		medium = const Color(0xde000000),
+		low = const Color(0x99000000),
+		disabled = const Color(0x61000000),
+		reversed = const ThemeColorPalette$TextEmphasis$Reversed.light();
 	/// The different text emphasis
-	const ThemeColorPalette$TextEmphasis.dark(): accent = const Color(0xff2864ac), success = const Color(0xff7ec141), error = const Color(0xffe54d39), high = const Color(0xffffffffff), medium = const Color(0xde000000), low = const Color(0x99000000), disabled = const Color(0x61000000), reversed = const ThemeColorPalette$TextEmphasis$Reversed.dark();
+	const ThemeColorPalette$TextEmphasis.dark():
+		accent = const Color(0xff2864ac),
+		success = const Color(0xff7ec141),
+		error = const Color(0xffe54d39),
+		high = const Color(0xffffffffff),
+		medium = const Color(0xde000000),
+		low = const Color(0x99000000),
+		disabled = const Color(0x61000000),
+		reversed = const ThemeColorPalette$TextEmphasis$Reversed.dark();
 
 	/// Accent Color
 	final Color accent;
@@ -74,9 +106,17 @@ class ThemeColorPalette$TextEmphasis {
 /// Reversed text emphasis
 class ThemeColorPalette$TextEmphasis$Reversed {
 	/// Reversed text emphasis
-	const ThemeColorPalette$TextEmphasis$Reversed.light(): high = const Color(0xffffffff), medium = const Color(0xdeffffff), low = const Color(0x99ffffff), disabled = const Color(0x61ffffff);
+	const ThemeColorPalette$TextEmphasis$Reversed.light():
+		high = const Color(0xffffffff),
+		medium = const Color(0xdeffffff),
+		low = const Color(0x99ffffff),
+		disabled = const Color(0x61ffffff);
 	/// Reversed text emphasis
-	const ThemeColorPalette$TextEmphasis$Reversed.dark(): high = const Color(0xff000000), medium = const Color(0xdeffffff), low = const Color(0x99ffffff), disabled = const Color(0x61ffffff);
+	const ThemeColorPalette$TextEmphasis$Reversed.dark():
+		high = const Color(0xff000000),
+		medium = const Color(0xdeffffff),
+		low = const Color(0x99ffffff),
+		disabled = const Color(0x61ffffff);
 
 	/// Reversed high emphasis
 	final Color high;
@@ -94,9 +134,19 @@ class ThemeColorPalette$TextEmphasis$Reversed {
 /// The different icon emphasis
 class ThemeColorPalette$IconEmphasis {
 	/// The different icon emphasis
-	const ThemeColorPalette$IconEmphasis.light(): high = const Color(0xff000000), medium = const Color(0xde000000), low = const Color(0x99000000), disabled = const Color(0x61000000), reversed = const ThemeColorPalette$IconEmphasis$Reversed.light();
+	const ThemeColorPalette$IconEmphasis.light():
+		high = const Color(0xff000000),
+		medium = const Color(0xde000000),
+		low = const Color(0x99000000),
+		disabled = const Color(0x61000000),
+		reversed = const ThemeColorPalette$IconEmphasis$Reversed.light();
 	/// The different icon emphasis
-	const ThemeColorPalette$IconEmphasis.dark(): high = const Color(0xffffffff), medium = const Color(0xde000000), low = const Color(0x99000000), disabled = const Color(0x61000000), reversed = const ThemeColorPalette$IconEmphasis$Reversed.dark();
+	const ThemeColorPalette$IconEmphasis.dark():
+		high = const Color(0xffffffff),
+		medium = const Color(0xde000000),
+		low = const Color(0x99000000),
+		disabled = const Color(0x61000000),
+		reversed = const ThemeColorPalette$IconEmphasis$Reversed.dark();
 
 	/// High emphasis
 	final Color high;
@@ -116,9 +166,17 @@ class ThemeColorPalette$IconEmphasis {
 /// Reversed icon emphasis
 class ThemeColorPalette$IconEmphasis$Reversed {
 	/// Reversed icon emphasis
-	const ThemeColorPalette$IconEmphasis$Reversed.light(): high = const Color(0xffffffff), medium = const Color(0xdeffffff), low = const Color(0x99ffffff), disabled = const Color(0x61ffffff);
+	const ThemeColorPalette$IconEmphasis$Reversed.light():
+		high = const Color(0xffffffff),
+		medium = const Color(0xdeffffff),
+		low = const Color(0x99ffffff),
+		disabled = const Color(0x61ffffff);
 	/// Reversed icon emphasis
-	const ThemeColorPalette$IconEmphasis$Reversed.dark(): high = const Color(0xff000000), medium = const Color(0xdeffffff), low = const Color(0x99ffffff), disabled = const Color(0x61ffffff);
+	const ThemeColorPalette$IconEmphasis$Reversed.dark():
+		high = const Color(0xff000000),
+		medium = const Color(0xdeffffff),
+		low = const Color(0x99ffffff),
+		disabled = const Color(0x61ffffff);
 
 	/// Reversed high emphasis
 	final Color high;
@@ -136,9 +194,13 @@ class ThemeColorPalette$IconEmphasis$Reversed {
 /// Borders
 class ThemeColorPalette$Border {
 	/// Borders
-	const ThemeColorPalette$Border.light(): high = const Color(0xff5c5c5c), medium = const Color(0xffe0e0e0);
+	const ThemeColorPalette$Border.light():
+		high = const Color(0xff5c5c5c),
+		medium = const Color(0xffe0e0e0);
 	/// Borders
-	const ThemeColorPalette$Border.dark(): high = const Color(0xfff5f5f5), medium = const Color(0xff474747);
+	const ThemeColorPalette$Border.dark():
+		high = const Color(0xfff5f5f5),
+		medium = const Color(0xff474747);
 
 	/// High border
 	final Color high;
@@ -152,9 +214,13 @@ class ThemeColorPalette$Border {
 /// Backgrounds
 class ThemeColorPalette$Background {
 	/// Backgrounds
-	const ThemeColorPalette$Background.light(): disabled = const Color(0xfff8f8f8), background1 = const Color(0xfff6f9fc);
+	const ThemeColorPalette$Background.light():
+		disabled = const Color(0xfff8f8f8),
+		background1 = const Color(0xfff6f9fc);
 	/// Backgrounds
-	const ThemeColorPalette$Background.dark(): disabled = const Color(0xff121212), background1 = const Color(0xff2e2e2e);
+	const ThemeColorPalette$Background.dark():
+		disabled = const Color(0xff121212),
+		background1 = const Color(0xff2e2e2e);
 
 	/// Disabled background
 	final Color disabled;
@@ -168,9 +234,11 @@ class ThemeColorPalette$Background {
 /// Floating action button
 class ThemeColorPalette$FloatingActionButton {
 	/// Floating action button
-	const ThemeColorPalette$FloatingActionButton.light(): disabledColor = const Color(0xffadc4df);
+	const ThemeColorPalette$FloatingActionButton.light():
+		disabledColor = const Color(0xffadc4df);
 	/// Floating action button
-	const ThemeColorPalette$FloatingActionButton.dark(): disabledColor = const Color(0xff225281);
+	const ThemeColorPalette$FloatingActionButton.dark():
+		disabledColor = const Color(0xff225281);
 
 	/// Disabled color
 	final Color disabledColor;

@@ -3,7 +3,7 @@
 
 analyzer:
   exclude:
-    - "**/*.g.dart"
+    # - "**/*.g.dart"
     - "lib/graphql_api.graphql.dart"
     - "lib/mobile/routes/names.dart"
     - "lib/shared/constants/tokens.dart"
