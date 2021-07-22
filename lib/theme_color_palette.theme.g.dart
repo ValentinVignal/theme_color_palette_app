@@ -73,13 +73,13 @@ class ThemeColorPalette$TextEmphasis {
 		reversed = const ThemeColorPalette$TextEmphasis$Reversed.light();
 	/// The different text emphasis
 	const ThemeColorPalette$TextEmphasis.dark():
-		accent = const Color(0xff2864ac),
+		accent = const Color(0xff699fcf),
 		success = const Color(0xff7ec141),
 		error = const Color(0xffe54d39),
-		high = const Color(0xffffffffff),
-		medium = const Color(0xde000000),
-		low = const Color(0x99000000),
-		disabled = const Color(0x61000000),
+		high = const Color(0xffffffff),
+		medium = const Color(0xdeffffff),
+		low = const Color(0x99ffffff),
+		disabled = const Color(0x61ffffff),
 		reversed = const ThemeColorPalette$TextEmphasis$Reversed.dark();
 
 	/// Accent Color
@@ -114,9 +114,9 @@ class ThemeColorPalette$TextEmphasis$Reversed {
 	/// Reversed text emphasis
 	const ThemeColorPalette$TextEmphasis$Reversed.dark():
 		high = const Color(0xff000000),
-		medium = const Color(0xdeffffff),
-		low = const Color(0x99ffffff),
-		disabled = const Color(0x61ffffff);
+		medium = const Color(0xde000000),
+		low = const Color(0x99000000),
+		disabled = const Color(0x61000000);
 
 	/// Reversed high emphasis
 	final Color high;
@@ -143,9 +143,9 @@ class ThemeColorPalette$IconEmphasis {
 	/// The different icon emphasis
 	const ThemeColorPalette$IconEmphasis.dark():
 		high = const Color(0xffffffff),
-		medium = const Color(0xde000000),
-		low = const Color(0x99000000),
-		disabled = const Color(0x61000000),
+		medium = const Color(0xdeffffff),
+		low = const Color(0x99ffffff),
+		disabled = const Color(0x61ffffff),
 		reversed = const ThemeColorPalette$IconEmphasis$Reversed.dark();
 
 	/// High emphasis
@@ -174,9 +174,9 @@ class ThemeColorPalette$IconEmphasis$Reversed {
 	/// Reversed icon emphasis
 	const ThemeColorPalette$IconEmphasis$Reversed.dark():
 		high = const Color(0xff000000),
-		medium = const Color(0xdeffffff),
-		low = const Color(0x99ffffff),
-		disabled = const Color(0x61ffffff);
+		medium = const Color(0xde000000),
+		low = const Color(0x99000000),
+		disabled = const Color(0x61000000);
 
 	/// Reversed high emphasis
 	final Color high;

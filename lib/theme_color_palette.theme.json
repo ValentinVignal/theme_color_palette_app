@@ -110,7 +110,7 @@
           "type": "color",
           "values": {
             "light": "ff000000",
-            "dark": "ffffffffff"
+            "dark": "ffffffff"
           }
         },
         {
