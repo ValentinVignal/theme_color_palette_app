@@ -41,6 +41,30 @@
       "description": "Medium Opacity",
       "type": "double",
       "value": 0.38
+    },
+    {
+      "name": "highElevation",
+      "description": "High elevation",
+      "type": "double",
+      "value": 3.0
+    },
+    {
+      "name": "mediumElevation",
+      "description": "Medium elevation",
+      "type": "double",
+      "value": 2.0
+    },
+    {
+      "name": "lowElevation",
+      "description": "Low elevation",
+      "type": "double",
+      "value": 1.0
+    },
+    {
+      "name": "noneElevation",
+      "description": "None elevation",
+      "type": "double",
+      "value": 0.0
     }
   ],
   "collections": [
@@ -456,6 +480,183 @@
           }
         }
       ]
+    },
+    {
+      "name": "task",
+      "description:": "Task color palette",
+      "values": [
+        {
+          "name": "notStarted",
+          "description": "Not started color",
+          "type": "color",
+          "values": {
+            "light": "ffed6e19"
+          }
+        },
+        {
+          "name": "workInProgress",
+          "description": "Work in progress color",
+          "type": "color",
+          "values": {
+            "light": "ffeaa60f"
+          }
+        },
+        {
+          "name": "completed",
+          "description": "Completed color",
+          "type": "color",
+          "values": {
+            "light": "ff81bf48"
+          }
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "description": "Form color palette",
+      "values": [
+        {
+          "name": "drat",
+          "description": "Draft color",
+          "type": "color",
+          "values": {
+            "light": "ffed6e19"
+          }
+        },
+        {
+          "name": "actionRequired",
+          "description": "Action required color",
+          "type": "color",
+          "values": {
+            "light": "ffeaa60f"
+          }
+        },
+        {
+          "name": "completed",
+          "description": "Completed color",
+          "type": "color",
+          "values": {
+            "light": "ff666666"
+          }
+        },
+        {
+          "name": "rejected",
+          "description": "Rejected color",
+          "type": "color",
+          "values": {
+            "light": "ffc73826"
+          }
+        }
+      ]
+    },
+    {
+      "name": "notification",
+      "description": "Notification color palette",
+      "values": [
+        {
+          "name": "countBubbleColor",
+          "type": "color",
+          "description": "Color of the notification bubble",
+          "values": {
+            "light": "fff26716"
+          }
+        }
+      ]
+    },
+    {
+      "name": "projectTimeline",
+      "description": "Project time line color palette",
+      "values": [
+        {
+          "name": "plannedLight",
+          "description": "Planned disc color",
+          "type": "color",
+          "values": {
+            "light": "ffeef3f8"
+          }
+        },
+        {
+          "name": "planned",
+          "description": "Planned text color",
+          "type": "color",
+          "values": {
+            "light": "ff647e9b"
+          }
+        },
+        {
+          "name": "start",
+          "description": "Start color",
+          "type": "color",
+          "values": {
+            "light": "ffeaa60f"
+          }
+        },
+        {
+          "name": "completed",
+          "description": "Completed color",
+          "type": "color",
+          "values": {
+            "light": "ff7ec141"
+          }
+        },
+        {
+          "name": "today",
+          "description": "Today disc color",
+          "type": "color",
+          "values": {
+            "light": "ff2864ac",
+            "dark": "ffc1dbef"
+          }
+        },
+        {
+          "name": "active",
+          "description": "Color for the Timeline Base",
+          "type": "color",
+          "values": {
+            "light": "ffeef3f8"
+          }
+        },
+        {
+          "name": "progress",
+          "description": " Color for the active part of the Timeline bar (Start -> Today/Completed)",
+          "type": "color",
+          "values": {
+            "light": "ff2864ac"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pin",
+      "description": "Pin theme",
+      "values": [
+        {
+          "name": "iconColor",
+          "description": "Icon Color",
+          "type": "color",
+          "values": {
+            "light": "ffffffff"
+          }
+        },
+        {
+          "name": "disabledBackgroundColor",
+          "description": "The background color when the pin is disabled",
+          "type": "color",
+          "values": {
+            "light": "ff8d8d8d"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cardColor",
+      "description": "Card Color",
+      "flutter": "theme.cardColor",
+      "type": "color",
+      "values": {
+        "light": "ffffffff",
+        "dark": "ff1e1e1e"
+      }
     }
   ]
 }
