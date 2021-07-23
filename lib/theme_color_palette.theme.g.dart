@@ -78,7 +78,7 @@ class ThemeColorPalette {
   final ThemeColorPalette$Background background;
   /// Floating action button
   final ThemeColorPalette$FloatingActionButton floatingActionButton;
-  /// 
+  /// Task color palette
   final ThemeColorPalette$Task task;
   /// Form color palette
   final ThemeColorPalette$Form form;
@@ -284,14 +284,14 @@ class ThemeColorPalette$FloatingActionButton {
 
 // -------------------- ThemeColorPalette$Task --------------------
 
-/// 
+/// Task color palette
 class ThemeColorPalette$Task {
-  /// 
+  /// Task color palette
   const ThemeColorPalette$Task.light():
     notStarted = const Color(0xffed6e19),
     workInProgress = const Color(0xffeaa60f),
     completed = const Color(0xff81bf48);
-  /// 
+  /// Task color palette
   const ThemeColorPalette$Task.dark():
     notStarted = const Color(0xffed6e19),
     workInProgress = const Color(0xffeaa60f),

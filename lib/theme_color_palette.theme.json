@@ -1,110 +1,110 @@
 {
-  "themes": [
+  ".themes": [
     "light",
     "dark"
   ],
-  "name": "ThemeColorPalette",
-  "description": "The Theme Color Palette",
-  "constants": [
+  ".name": "ThemeColorPalette",
+  ".description": "The Theme Color Palette",
+  ".shared": [
     {
-      "name": "radius",
-      "description": "Default radius",
-      "type": "double",
-      "value": 4.0
+      ".name": "radius",
+      ".description": "Default radius",
+      ".type": "double",
+      ".value": 4
     },
     {
-      "name": "defaultPadding",
-      "description": "Default Padding",
-      "type": "double",
-      "value": 16.0
+      ".name": "defaultPadding",
+      ".description": "Default Padding",
+      ".type": "double",
+      ".value": 16
     },
     {
-      "name": "highOpacity",
-      "description": "Medium Opacity",
-      "type": "double",
-      "value": 1.0
+      ".name": "highOpacity",
+      ".description": "Medium Opacity",
+      ".type": "double",
+      ".value": 1
     },
     {
-      "name": "mediumOpacity",
-      "description": "Medium Opacity",
-      "type": "double",
-      "value": 0.87
+      ".name": "mediumOpacity",
+      ".description": "Medium Opacity",
+      ".type": "double",
+      ".value": 0.87
     },
     {
-      "name": "lowOpacity",
-      "description": "Medium Opacity",
-      "type": "double",
-      "value": 0.6
+      ".name": "lowOpacity",
+      ".description": "Medium Opacity",
+      ".type": "double",
+      ".value": 0.6
     },
     {
-      "name": "disabledOpacity",
-      "description": "Medium Opacity",
-      "type": "double",
-      "value": 0.38
+      ".name": "disabledOpacity",
+      ".description": "Medium Opacity",
+      ".type": "double",
+      ".value": 0.38
     },
     {
-      "name": "highElevation",
-      "description": "High elevation",
-      "type": "double",
-      "value": 3.0
+      ".name": "highElevation",
+      ".description": "High elevation",
+      ".type": "double",
+      ".value": 3
     },
     {
-      "name": "mediumElevation",
-      "description": "Medium elevation",
-      "type": "double",
-      "value": 2.0
+      ".name": "mediumElevation",
+      ".description": "Medium elevation",
+      ".type": "double",
+      ".value": 2
     },
     {
-      "name": "lowElevation",
-      "description": "Low elevation",
-      "type": "double",
-      "value": 1.0
+      ".name": "lowElevation",
+      ".description": "Low elevation",
+      ".type": "double",
+      ".value": 1
     },
     {
-      "name": "noneElevation",
-      "description": "None elevation",
-      "type": "double",
-      "value": 0.0
+      ".name": "noneElevation",
+      ".description": "None elevation",
+      ".type": "double",
+      ".value": 0
     }
   ],
-  "collections": [
+  ".themed": [
     {
-      "name": "accentColor",
-      "description": "Accent color",
-      "flutter": "theme.accentColor",
-      "type": "color",
-      "values": {
+      ".name": "accentColor",
+      ".description": "Accent color",
+      ".flutter": "theme.accentColor",
+      ".type": "color",
+      ".values": {
         "light": "ff2864ac",
         "dark": "ff699fcf"
       }
     },
     {
-      "name": "primaryColor",
-      "description": "Primary color",
-      "flutter": "theme.primaryColor",
-      "type": "color",
-      "values": {
+      ".name": "primaryColor",
+      ".description": "Primary color",
+      ".flutter": "theme.primaryColor",
+      ".type": "color",
+      ".values": {
         "light": "ff5182bb",
         "dark": "ffc1dbef"
       }
     },
     {
-      "name": "secondaryColor",
-      "description": "Secondary color",
-      "type": "color",
-      "values": {
+      ".name": "secondaryColor",
+      ".description": "Secondary color",
+      ".type": "color",
+      ".values": {
         "light": "ff7ec141"
       }
     },
     {
-      "name": "textEmphasis",
-      "description": "The different text emphasis",
-      "values": [
+      ".name": "textEmphasis",
+      ".description": "The different text emphasis",
+      ".values": [
         {
-          "name": "accent",
-          "description": "Accent Color",
-          "type": "color",
-          "values": {
+          ".name": "accent",
+          ".description": "Accent Color",
+          ".type": "color",
+          ".values": {
             "light": {
               "import": [
                 "accentColor"
@@ -113,35 +113,35 @@
           }
         },
         {
-          "name": "success",
-          "description": "Success Color",
-          "type": "color",
-          "values": {
+          ".name": "success",
+          ".description": "Success Color",
+          ".type": "color",
+          ".values": {
             "light": "ff7ec141"
           }
         },
         {
-          "name": "error",
-          "description": "Error Color",
-          "type": "color",
-          "values": {
+          ".name": "error",
+          ".description": "Error Color",
+          ".type": "color",
+          ".values": {
             "light": "ffe54d39"
           }
         },
         {
-          "name": "high",
-          "description": "High emphasis",
-          "type": "color",
-          "values": {
+          ".name": "high",
+          ".description": "High emphasis",
+          ".type": "color",
+          ".values": {
             "light": "ff000000",
             "dark": "ffffffff"
           }
         },
         {
-          "name": "medium",
-          "description": "Medium emphasis",
-          "type": "color",
-          "values": {
+          ".name": "medium",
+          ".description": "Medium emphasis",
+          ".type": "color",
+          ".values": {
             "light": {
               "import": [
                 "textEmphasis",
@@ -157,10 +157,10 @@
           }
         },
         {
-          "name": "low",
-          "description": "Low emphasis",
-          "type": "color",
-          "values": {
+          ".name": "low",
+          ".description": "Low emphasis",
+          ".type": "color",
+          ".values": {
             "light": {
               "import": [
                 "textEmphasis",
@@ -176,10 +176,10 @@
           }
         },
         {
-          "name": "disabled",
-          "description": "Disabled emphasis",
-          "type": "color",
-          "values": {
+          ".name": "disabled",
+          ".description": "Disabled emphasis",
+          ".type": "color",
+          ".values": {
             "light": {
               "import": [
                 "textEmphasis",
@@ -195,23 +195,23 @@
           }
         },
         {
-          "name": "reversed",
-          "description": "Reversed text emphasis",
-          "values": [
+          ".name": "reversed",
+          ".description": "Reversed text emphasis",
+          ".values": [
             {
-              "name": "high",
-              "description": "Reversed high emphasis",
-              "type": "color",
-              "values": {
+              ".name": "high",
+              ".description": "Reversed high emphasis",
+              ".type": "color",
+              ".values": {
                 "light": "ffffffff",
                 "dark": "ff000000"
               }
             },
             {
-              "name": "medium",
-              "description": "Reversed medium emphasis",
-              "type": "color",
-              "values": {
+              ".name": "medium",
+              ".description": "Reversed medium emphasis",
+              ".type": "color",
+              ".values": {
                 "light": {
                   "import": [
                     "textEmphasis",
@@ -228,10 +228,10 @@
               }
             },
             {
-              "name": "low",
-              "description": "Reversed low emphasis",
-              "type": "color",
-              "values": {
+              ".name": "low",
+              ".description": "Reversed low emphasis",
+              ".type": "color",
+              ".values": {
                 "light": {
                   "import": [
                     "textEmphasis",
@@ -248,10 +248,10 @@
               }
             },
             {
-              "name": "disabled",
-              "description": "Reversed disabled emphasis",
-              "type": "color",
-              "values": {
+              ".name": "disabled",
+              ".description": "Reversed disabled emphasis",
+              ".type": "color",
+              ".values": {
                 "light": {
                   "import": [
                     "textEmphasis",
@@ -272,23 +272,23 @@
       ]
     },
     {
-      "name": "iconEmphasis",
-      "description": "The different icon emphasis",
-      "values": [
+      ".name": "iconEmphasis",
+      ".description": "The different icon emphasis",
+      ".values": [
         {
-          "name": "high",
-          "description": "High emphasis",
-          "type": "color",
-          "values": {
+          ".name": "high",
+          ".description": "High emphasis",
+          ".type": "color",
+          ".values": {
             "light": "ff000000",
             "dark": "ffffffff"
           }
         },
         {
-          "name": "medium",
-          "description": "Medium emphasis",
-          "type": "color",
-          "values": {
+          ".name": "medium",
+          ".description": "Medium emphasis",
+          ".type": "color",
+          ".values": {
             "light": {
               "import": [
                 "iconEmphasis",
@@ -304,10 +304,10 @@
           }
         },
         {
-          "name": "low",
-          "description": "Low emphasis",
-          "type": "color",
-          "values": {
+          ".name": "low",
+          ".description": "Low emphasis",
+          ".type": "color",
+          ".values": {
             "light": {
               "import": [
                 "iconEmphasis",
@@ -323,10 +323,10 @@
           }
         },
         {
-          "name": "disabled",
-          "description": "Disabled emphasis",
-          "type": "color",
-          "values": {
+          ".name": "disabled",
+          ".description": "Disabled emphasis",
+          ".type": "color",
+          ".values": {
             "light": {
               "import": [
                 "iconEmphasis",
@@ -342,23 +342,23 @@
           }
         },
         {
-          "name": "reversed",
-          "description": "Reversed icon emphasis",
-          "values": [
+          ".name": "reversed",
+          ".description": "Reversed icon emphasis",
+          ".values": [
             {
-              "name": "high",
-              "description": "Reversed high emphasis",
-              "type": "color",
-              "values": {
+              ".name": "high",
+              ".description": "Reversed high emphasis",
+              ".type": "color",
+              ".values": {
                 "light": "ffffffff",
                 "dark": "ff000000"
               }
             },
             {
-              "name": "medium",
-              "description": "Reversed medium emphasis",
-              "type": "color",
-              "values": {
+              ".name": "medium",
+              ".description": "Reversed medium emphasis",
+              ".type": "color",
+              ".values": {
                 "light": {
                   "import": [
                     "iconEmphasis",
@@ -375,10 +375,10 @@
               }
             },
             {
-              "name": "low",
-              "description": "Reversed low emphasis",
-              "type": "color",
-              "values": {
+              ".name": "low",
+              ".description": "Reversed low emphasis",
+              ".type": "color",
+              ".values": {
                 "light": {
                   "import": [
                     "iconEmphasis",
@@ -395,10 +395,10 @@
               }
             },
             {
-              "name": "disabled",
-              "description": "Reversed disabled emphasis",
-              "type": "color",
-              "values": {
+              ".name": "disabled",
+              ".description": "Reversed disabled emphasis",
+              ".type": "color",
+              ".values": {
                 "light": {
                   "import": [
                     "iconEmphasis",
@@ -419,23 +419,23 @@
       ]
     },
     {
-      "name": "border",
-      "description": "Borders",
-      "values": [
+      ".name": "border",
+      ".description": "Borders",
+      ".values": [
         {
-          "name": "high",
-          "description": "High border",
-          "type": "color",
-          "values": {
+          ".name": "high",
+          ".description": "High border",
+          ".type": "color",
+          ".values": {
             "light": "ff5c5c5c",
             "dark": "fff5f5f5"
           }
         },
         {
-          "name": "medium",
-          "description": "Medium border",
-          "type": "color",
-          "values": {
+          ".name": "medium",
+          ".description": "Medium border",
+          ".type": "color",
+          ".values": {
             "light": "ffe0e0e0",
             "dark": "ff474747"
           }
@@ -443,23 +443,23 @@
       ]
     },
     {
-      "name": "background",
-      "description": "Backgrounds",
-      "values": [
+      ".name": "background",
+      ".description": "Backgrounds",
+      ".values": [
         {
-          "name": "disabled",
-          "description": "Disabled background",
-          "type": "color",
-          "values": {
+          ".name": "disabled",
+          ".description": "Disabled background",
+          ".type": "color",
+          ".values": {
             "light": "fff8f8f8",
             "dark": "ff121212"
           }
         },
         {
-          "name": "background1",
-          "description": "Background 1",
-          "type": "color",
-          "values": {
+          ".name": "background1",
+          ".description": "Background 1",
+          ".type": "color",
+          ".values": {
             "light": "fff6f9fc",
             "dark": "ff2e2e2e"
           }
@@ -467,14 +467,14 @@
       ]
     },
     {
-      "name": "floatingActionButton",
-      "description": "Floating action button",
-      "values": [
+      ".name": "floatingActionButton",
+      ".description": "Floating action button",
+      ".values": [
         {
-          "name": "disabledColor",
-          "description": "Disabled color",
-          "type": "color",
-          "values": {
+          ".name": "disabledColor",
+          ".description": "Disabled color",
+          ".type": "color",
+          ".values": {
             "light": "ffadc4df",
             "dark": "ff225281"
           }
@@ -482,178 +482,178 @@
       ]
     },
     {
-      "name": "task",
-      "description:": "Task color palette",
-      "values": [
+      ".name": "task",
+      ".description": "Task color palette",
+      ".values": [
         {
-          "name": "notStarted",
-          "description": "Not started color",
-          "type": "color",
-          "values": {
+          ".name": "notStarted",
+          ".description": "Not started color",
+          ".type": "color",
+          ".values": {
             "light": "ffed6e19"
           }
         },
         {
-          "name": "workInProgress",
-          "description": "Work in progress color",
-          "type": "color",
-          "values": {
+          ".name": "workInProgress",
+          ".description": "Work in progress color",
+          ".type": "color",
+          ".values": {
             "light": "ffeaa60f"
           }
         },
         {
-          "name": "completed",
-          "description": "Completed color",
-          "type": "color",
-          "values": {
+          ".name": "completed",
+          ".description": "Completed color",
+          ".type": "color",
+          ".values": {
             "light": "ff81bf48"
           }
         }
       ]
     },
     {
-      "name": "form",
-      "description": "Form color palette",
-      "values": [
+      ".name": "form",
+      ".description": "Form color palette",
+      ".values": [
         {
-          "name": "draft",
-          "description": "Draft color",
-          "type": "color",
-          "values": {
+          ".name": "draft",
+          ".description": "Draft color",
+          ".type": "color",
+          ".values": {
             "light": "ffed6e19"
           }
         },
         {
-          "name": "actionRequired",
-          "description": "Action required color",
-          "type": "color",
-          "values": {
+          ".name": "actionRequired",
+          ".description": "Action required color",
+          ".type": "color",
+          ".values": {
             "light": "ffeaa60f"
           }
         },
         {
-          "name": "completed",
-          "description": "Completed color",
-          "type": "color",
-          "values": {
+          ".name": "completed",
+          ".description": "Completed color",
+          ".type": "color",
+          ".values": {
             "light": "ff666666"
           }
         },
         {
-          "name": "rejected",
-          "description": "Rejected color",
-          "type": "color",
-          "values": {
+          ".name": "rejected",
+          ".description": "Rejected color",
+          ".type": "color",
+          ".values": {
             "light": "ffc73826"
           }
         }
       ]
     },
     {
-      "name": "notification",
-      "description": "Notification color palette",
-      "values": [
+      ".name": "notification",
+      ".description": "Notification color palette",
+      ".values": [
         {
-          "name": "countBubbleColor",
-          "type": "color",
-          "description": "Color of the notification bubble",
-          "values": {
+          ".name": "countBubbleColor",
+          ".type": "color",
+          ".description": "Color of the notification bubble",
+          ".values": {
             "light": "fff26716"
           }
         }
       ]
     },
     {
-      "name": "projectTimeline",
-      "description": "Project time line color palette",
-      "values": [
+      ".name": "projectTimeline",
+      ".description": "Project time line color palette",
+      ".values": [
         {
-          "name": "plannedLight",
-          "description": "Planned disc color",
-          "type": "color",
-          "values": {
+          ".name": "plannedLight",
+          ".description": "Planned disc color",
+          ".type": "color",
+          ".values": {
             "light": "ffeef3f8"
           }
         },
         {
-          "name": "planned",
-          "description": "Planned text color",
-          "type": "color",
-          "values": {
+          ".name": "planned",
+          ".description": "Planned text color",
+          ".type": "color",
+          ".values": {
             "light": "ff647e9b"
           }
         },
         {
-          "name": "start",
-          "description": "Start color",
-          "type": "color",
-          "values": {
+          ".name": "start",
+          ".description": "Start color",
+          ".type": "color",
+          ".values": {
             "light": "ffeaa60f"
           }
         },
         {
-          "name": "completed",
-          "description": "Completed color",
-          "type": "color",
-          "values": {
+          ".name": "completed",
+          ".description": "Completed color",
+          ".type": "color",
+          ".values": {
             "light": "ff7ec141"
           }
         },
         {
-          "name": "today",
-          "description": "Today disc color",
-          "type": "color",
-          "values": {
+          ".name": "today",
+          ".description": "Today disc color",
+          ".type": "color",
+          ".values": {
             "light": "ff2864ac",
             "dark": "ffc1dbef"
           }
         },
         {
-          "name": "active",
-          "description": "Color for the Timeline Base",
-          "type": "color",
-          "values": {
+          ".name": "active",
+          ".description": "Color for the Timeline Base",
+          ".type": "color",
+          ".values": {
             "light": "ffeef3f8"
           }
         },
         {
-          "name": "progress",
-          "description": " Color for the active part of the Timeline bar (Start -> Today/Completed)",
-          "type": "color",
-          "values": {
+          ".name": "progress",
+          ".description": " Color for the active part of the Timeline bar (Start -> Today/Completed)",
+          ".type": "color",
+          ".values": {
             "light": "ff2864ac"
           }
         }
       ]
     },
     {
-      "name": "pin",
-      "description": "Pin theme",
-      "values": [
+      ".name": "pin",
+      ".description": "Pin theme",
+      ".values": [
         {
-          "name": "iconColor",
-          "description": "Icon Color",
-          "type": "color",
-          "values": {
+          ".name": "iconColor",
+          ".description": "Icon Color",
+          ".type": "color",
+          ".values": {
             "light": "ffffffff"
           }
         },
         {
-          "name": "disabledBackgroundColor",
-          "description": "The background color when the pin is disabled",
-          "type": "color",
-          "values": {
+          ".name": "disabledBackgroundColor",
+          ".description": "The background color when the pin is disabled",
+          ".type": "color",
+          ".values": {
             "light": "ff8d8d8d"
           }
         }
       ]
     },
     {
-      "name": "cardColor",
-      "description": "Card Color",
-      "flutter": "theme.cardColor",
-      "type": "color",
-      "values": {
+      ".name": "cardColor",
+      ".description": "Card Color",
+      ".flutter": "theme.cardColor",
+      ".type": "color",
+      ".values": {
         "light": "ffffffff",
         "dark": "ff1e1e1e"
       }
