@@ -39,8 +39,10 @@ class ThemeColorPalette {
 	static const disabledOpacity = 0.38;
 
 	/// Accent color
+	@Deprecated('Use theme.accentColor instead')
 	final Color accentColor;
 	/// Primary color
+	@Deprecated('Use theme.primaryColor instead')
 	final Color primaryColor;
 	/// Secondary color
 	final Color secondaryColor;

@@ -47,7 +47,7 @@
     {
       "name": "accentColor",
       "description": "Accent color",
-      "flutter": true,
+      "flutter": "theme.accentColor",
       "type": "color",
       "values": {
         "light": "ff2864ac",
@@ -57,7 +57,7 @@
     {
       "name": "primaryColor",
       "description": "Primary color",
-      "flutter": true,
+      "flutter": "theme.primaryColor",
       "type": "color",
       "values": {
         "light": "ff5182bb",
