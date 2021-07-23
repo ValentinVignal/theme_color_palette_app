@@ -1,3 +1,5 @@
+// ! GENERATED CODE - DO NOT MANUALLY EDIT
+
 import 'package:flutter/material.dart';
 
 // -------------------- ThemeColorPalette --------------------
