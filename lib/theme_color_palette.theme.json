@@ -516,7 +516,7 @@
       "description": "Form color palette",
       "values": [
         {
-          "name": "drat",
+          "name": "draft",
           "description": "Draft color",
           "type": "color",
           "values": {
