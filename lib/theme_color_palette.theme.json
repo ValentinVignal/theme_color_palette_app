@@ -5,71 +5,60 @@
   ],
   ".name": "ThemeColorPalette",
   ".description": "The Theme Color Palette",
-  ".shared": [
-    {
-      ".name": "radius",
+  ".shared": {
+    "radius": {
       ".description": "Default radius",
       ".type": "double",
       ".value": 4
     },
-    {
-      ".name": "defaultPadding",
+    "defaultPadding": {
       ".description": "Default Padding",
       ".type": "double",
       ".value": 16
     },
-    {
-      ".name": "highOpacity",
+    "highOpacity": {
       ".description": "Medium Opacity",
       ".type": "double",
       ".value": 1
     },
-    {
-      ".name": "mediumOpacity",
+    "mediumOpacity": {
       ".description": "Medium Opacity",
       ".type": "double",
       ".value": 0.87
     },
-    {
-      ".name": "lowOpacity",
+    "lowOpacity": {
       ".description": "Medium Opacity",
       ".type": "double",
       ".value": 0.6
     },
-    {
-      ".name": "disabledOpacity",
+    "disabledOpacity": {
       ".description": "Medium Opacity",
       ".type": "double",
       ".value": 0.38
     },
-    {
-      ".name": "highElevation",
+    "highElevation": {
       ".description": "High elevation",
       ".type": "double",
       ".value": 3
     },
-    {
-      ".name": "mediumElevation",
+    "mediumElevation": {
       ".description": "Medium elevation",
       ".type": "double",
       ".value": 2
     },
-    {
-      ".name": "lowElevation",
+    "lowElevation": {
       ".description": "Low elevation",
       ".type": "double",
       ".value": 1
     },
-    {
-      ".name": "noneElevation",
+    "noneElevation": {
       ".description": "None elevation",
       ".type": "double",
       ".value": 0
     }
-  ],
-  ".themed": [
-    {
-      ".name": "accentColor",
+  },
+  ".themed": {
+    "accentColor": {
       ".description": "Accent color",
       ".flutter": "theme.accentColor",
       ".type": "color",
@@ -78,8 +67,7 @@
         "dark": "ff699fcf"
       }
     },
-    {
-      ".name": "primaryColor",
+    "primaryColor": {
       ".description": "Primary color",
       ".flutter": "theme.primaryColor",
       ".type": "color",
@@ -88,20 +76,17 @@
         "dark": "ffc1dbef"
       }
     },
-    {
-      ".name": "secondaryColor",
+    "secondaryColor": {
       ".description": "Secondary color",
       ".type": "color",
       ".values": {
         "light": "ff7ec141"
       }
     },
-    {
-      ".name": "textEmphasis",
+    "textEmphasis": {
       ".description": "The different text emphasis",
-      ".values": [
-        {
-          ".name": "accent",
+      ".values": {
+        "accent": {
           ".description": "Accent Color",
           ".type": "color",
           ".values": {
@@ -112,24 +97,21 @@
             }
           }
         },
-        {
-          ".name": "success",
+        "success": {
           ".description": "Success Color",
           ".type": "color",
           ".values": {
             "light": "ff7ec141"
           }
         },
-        {
-          ".name": "error",
+        "error": {
           ".description": "Error Color",
           ".type": "color",
           ".values": {
             "light": "ffe54d39"
           }
         },
-        {
-          ".name": "high",
+        "high": {
           ".description": "High emphasis",
           ".type": "color",
           ".values": {
@@ -137,8 +119,7 @@
             "dark": "ffffffff"
           }
         },
-        {
-          ".name": "medium",
+        "medium": {
           ".description": "Medium emphasis",
           ".type": "color",
           ".values": {
@@ -156,8 +137,7 @@
             }
           }
         },
-        {
-          ".name": "low",
+        "low": {
           ".description": "Low emphasis",
           ".type": "color",
           ".values": {
@@ -175,8 +155,7 @@
             }
           }
         },
-        {
-          ".name": "disabled",
+        "disabled": {
           ".description": "Disabled emphasis",
           ".type": "color",
           ".values": {
@@ -194,12 +173,10 @@
             }
           }
         },
-        {
-          ".name": "reversed",
+        "reversed": {
           ".description": "Reversed text emphasis",
-          ".values": [
-            {
-              ".name": "high",
+          ".values": {
+            "high": {
               ".description": "Reversed high emphasis",
               ".type": "color",
               ".values": {
@@ -207,8 +184,7 @@
                 "dark": "ff000000"
               }
             },
-            {
-              ".name": "medium",
+            "medium": {
               ".description": "Reversed medium emphasis",
               ".type": "color",
               ".values": {
@@ -227,8 +203,7 @@
                 }
               }
             },
-            {
-              ".name": "low",
+            "low": {
               ".description": "Reversed low emphasis",
               ".type": "color",
               ".values": {
@@ -247,8 +222,7 @@
                 }
               }
             },
-            {
-              ".name": "disabled",
+            "disabled": {
               ".description": "Reversed disabled emphasis",
               ".type": "color",
               ".values": {
@@ -267,16 +241,14 @@
                 }
               }
             }
-          ]
+          }
         }
-      ]
+      }
     },
-    {
-      ".name": "iconEmphasis",
+    "iconEmphasis": {
       ".description": "The different icon emphasis",
-      ".values": [
-        {
-          ".name": "high",
+      ".values": {
+        "high": {
           ".description": "High emphasis",
           ".type": "color",
           ".values": {
@@ -284,8 +256,7 @@
             "dark": "ffffffff"
           }
         },
-        {
-          ".name": "medium",
+        "medium": {
           ".description": "Medium emphasis",
           ".type": "color",
           ".values": {
@@ -303,8 +274,7 @@
             }
           }
         },
-        {
-          ".name": "low",
+        "low": {
           ".description": "Low emphasis",
           ".type": "color",
           ".values": {
@@ -322,8 +292,7 @@
             }
           }
         },
-        {
-          ".name": "disabled",
+        "disabled": {
           ".description": "Disabled emphasis",
           ".type": "color",
           ".values": {
@@ -341,12 +310,10 @@
             }
           }
         },
-        {
-          ".name": "reversed",
+        "reversed": {
           ".description": "Reversed icon emphasis",
-          ".values": [
-            {
-              ".name": "high",
+          ".values": {
+            "high": {
               ".description": "Reversed high emphasis",
               ".type": "color",
               ".values": {
@@ -354,8 +321,7 @@
                 "dark": "ff000000"
               }
             },
-            {
-              ".name": "medium",
+            "medium": {
               ".description": "Reversed medium emphasis",
               ".type": "color",
               ".values": {
@@ -374,8 +340,7 @@
                 }
               }
             },
-            {
-              ".name": "low",
+            "low": {
               ".description": "Reversed low emphasis",
               ".type": "color",
               ".values": {
@@ -394,8 +359,7 @@
                 }
               }
             },
-            {
-              ".name": "disabled",
+            "disabled": {
               ".description": "Reversed disabled emphasis",
               ".type": "color",
               ".values": {
@@ -414,16 +378,14 @@
                 }
               }
             }
-          ]
+          }
         }
-      ]
+      }
     },
-    {
-      ".name": "border",
+    "border": {
       ".description": "Borders",
-      ".values": [
-        {
-          ".name": "high",
+      ".values": {
+        "high": {
           ".description": "High border",
           ".type": "color",
           ".values": {
@@ -431,8 +393,7 @@
             "dark": "fff5f5f5"
           }
         },
-        {
-          ".name": "medium",
+        "medium": {
           ".description": "Medium border",
           ".type": "color",
           ".values": {
@@ -440,14 +401,12 @@
             "dark": "ff474747"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "background",
+    "background": {
       ".description": "Backgrounds",
-      ".values": [
-        {
-          ".name": "disabled",
+      ".values": {
+        "disabled": {
           ".description": "Disabled background",
           ".type": "color",
           ".values": {
@@ -455,8 +414,7 @@
             "dark": "ff121212"
           }
         },
-        {
-          ".name": "background1",
+        "background1": {
           ".description": "Background 1",
           ".type": "color",
           ".values": {
@@ -464,14 +422,12 @@
             "dark": "ff2e2e2e"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "floatingActionButton",
+    "floatingActionButton": {
       ".description": "Floating action button",
-      ".values": [
-        {
-          ".name": "disabledColor",
+      ".values": {
+        "disabledColor": {
           ".description": "Disabled color",
           ".type": "color",
           ".values": {
@@ -479,128 +435,111 @@
             "dark": "ff225281"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "task",
+    "task": {
       ".description": "Task color palette",
-      ".values": [
-        {
-          ".name": "notStarted",
+      ".values": {
+        "notStarted": {
           ".description": "Not started color",
           ".type": "color",
           ".values": {
             "light": "ffed6e19"
           }
         },
-        {
-          ".name": "workInProgress",
+        "workInProgress": {
           ".description": "Work in progress color",
           ".type": "color",
           ".values": {
             "light": "ffeaa60f"
           }
         },
-        {
-          ".name": "completed",
+        "completed": {
           ".description": "Completed color",
           ".type": "color",
           ".values": {
             "light": "ff81bf48"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "form",
+    "form": {
       ".description": "Form color palette",
-      ".values": [
-        {
-          ".name": "draft",
+      ".values": {
+        "draft": {
           ".description": "Draft color",
           ".type": "color",
           ".values": {
             "light": "ffed6e19"
           }
         },
-        {
-          ".name": "actionRequired",
+        "actionRequired": {
           ".description": "Action required color",
           ".type": "color",
           ".values": {
             "light": "ffeaa60f"
           }
         },
-        {
-          ".name": "completed",
+        "completed": {
           ".description": "Completed color",
           ".type": "color",
           ".values": {
             "light": "ff666666"
           }
         },
-        {
-          ".name": "rejected",
+        "rejected": {
           ".description": "Rejected color",
           ".type": "color",
           ".values": {
             "light": "ffc73826"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "notification",
+    "notification": {
       ".description": "Notification color palette",
-      ".values": [
-        {
-          ".name": "countBubbleColor",
+      ".values": {
+        "countBubbleColor": {
           ".type": "color",
           ".description": "Color of the notification bubble",
           ".values": {
             "light": "fff26716"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "projectTimeline",
+    "projectTimeline": {
       ".description": "Project time line color palette",
-      ".values": [
-        {
-          ".name": "plannedLight",
+      ".values": {
+        "plannedLight": {
           ".description": "Planned disc color",
           ".type": "color",
           ".values": {
             "light": "ffeef3f8"
           }
         },
-        {
-          ".name": "planned",
+        "planned": {
           ".description": "Planned text color",
           ".type": "color",
           ".values": {
             "light": "ff647e9b"
           }
         },
-        {
-          ".name": "start",
+        "start": {
           ".description": "Start color",
           ".type": "color",
           ".values": {
             "light": "ffeaa60f"
           }
         },
-        {
-          ".name": "completed",
+        "completed": {
           ".description": "Completed color",
           ".type": "color",
           ".values": {
             "light": "ff7ec141"
           }
         },
-        {
-          ".name": "today",
+        "today": {
           ".description": "Today disc color",
           ".type": "color",
           ".values": {
@@ -608,48 +547,42 @@
             "dark": "ffc1dbef"
           }
         },
-        {
-          ".name": "active",
+        "active": {
           ".description": "Color for the Timeline Base",
           ".type": "color",
           ".values": {
             "light": "ffeef3f8"
           }
         },
-        {
-          ".name": "progress",
+        "progress": {
           ".description": " Color for the active part of the Timeline bar (Start -> Today/Completed)",
           ".type": "color",
           ".values": {
             "light": "ff2864ac"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "pin",
+    "pin": {
       ".description": "Pin theme",
-      ".values": [
-        {
-          ".name": "iconColor",
+      ".values": {
+        "iconColor": {
           ".description": "Icon Color",
           ".type": "color",
           ".values": {
             "light": "ffffffff"
           }
         },
-        {
-          ".name": "disabledBackgroundColor",
+        "disabledBackgroundColor": {
           ".description": "The background color when the pin is disabled",
           ".type": "color",
           ".values": {
             "light": "ff8d8d8d"
           }
         }
-      ]
+      }
     },
-    {
-      ".name": "cardColor",
+    "cardColor": {
       ".description": "Card Color",
       ".flutter": "theme.cardColor",
       ".type": "color",
@@ -658,5 +591,5 @@
         "dark": "ff1e1e1e"
       }
     }
-  ]
+  }
 }
