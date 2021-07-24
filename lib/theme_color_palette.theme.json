@@ -16,45 +16,49 @@
       ".type": "double",
       ".value": 16
     },
-    "highOpacity": {
-      ".description": "Medium Opacity",
-      ".type": "double",
-      ".value": 1
+    "opacity": {
+      "high": {
+        ".description": "High opacity",
+        ".type": "double",
+        ".value": 1
+      },
+      "medium": {
+        ".description": "Medium opacity",
+        ".type": "double",
+        ".value": 0.87
+      },
+      "low": {
+        ".description": "Low opacity ",
+        ".type": "double",
+        ".value": 0.6
+      },
+      "disabled": {
+        ".description": "Disabled opacity",
+        ".type": "double",
+        ".value": 0.38
+      }
     },
-    "mediumOpacity": {
-      ".description": "Medium Opacity",
-      ".type": "double",
-      ".value": 0.87
-    },
-    "lowOpacity": {
-      ".description": "Medium Opacity",
-      ".type": "double",
-      ".value": 0.6
-    },
-    "disabledOpacity": {
-      ".description": "Medium Opacity",
-      ".type": "double",
-      ".value": 0.38
-    },
-    "highElevation": {
-      ".description": "High elevation",
-      ".type": "double",
-      ".value": 3
-    },
-    "mediumElevation": {
-      ".description": "Medium elevation",
-      ".type": "double",
-      ".value": 2
-    },
-    "lowElevation": {
-      ".description": "Low elevation",
-      ".type": "double",
-      ".value": 1
-    },
-    "noneElevation": {
-      ".description": "None elevation",
-      ".type": "double",
-      ".value": 0
+    "elevation": {
+      "high": {
+        ".description": "High elevation",
+        ".type": "double",
+        ".value": 3
+      },
+      "medium": {
+        ".description": "Medium elevation",
+        ".type": "double",
+        ".value": 2
+      },
+      "low": {
+        ".description": "Low elevation",
+        ".type": "double",
+        ".value": 1
+      },
+      "none": {
+        ".description": "None elevation",
+        ".type": "double",
+        ".value": 0
+      }
     }
   },
   ".themed": {
@@ -115,7 +119,8 @@
           "withOpacity": {
             "import": [
               ".shared",
-              "mediumOpacity"
+              "opacity",
+              "medium"
             ]
           }
         }
@@ -131,7 +136,8 @@
           "withOpacity": {
             "import": [
               ".shared",
-              "lowOpacity"
+              "opacity",
+              "low"
             ]
           }
         }
@@ -147,7 +153,8 @@
           "withOpacity": {
             "import": [
               ".shared",
-              "disabledOpacity"
+              "opacity",
+              "disabled"
             ]
           }
         }
@@ -172,7 +179,8 @@
             "withOpacity": {
               "import": [
                 ".shared",
-                "mediumOpacity"
+                "opacity",
+                "medium"
               ]
             }
           }
@@ -189,7 +197,8 @@
             "withOpacity": {
               "import": [
                 ".shared",
-                "lowOpacity"
+                "opacity",
+                "low"
               ]
             }
           }
@@ -206,7 +215,8 @@
             "withOpacity": {
               "import": [
                 ".shared",
-                "disabledOpacity"
+                "opacity",
+                "disabled"
               ]
             }
           }
@@ -232,7 +242,8 @@
           "withOpacity": {
             "import": [
               ".shared",
-              "mediumOpacity"
+              "opacity",
+              "medium"
             ]
           }
         }
@@ -248,7 +259,8 @@
           "withOpacity": {
             "import": [
               ".shared",
-              "lowOpacity"
+              "opacity",
+              "low"
             ]
           }
         }
@@ -264,7 +276,8 @@
           "withOpacity": {
             "import": [
               ".shared",
-              "disabledOpacity"
+              "opacity",
+              "disabled"
             ]
           }
         }
@@ -289,7 +302,8 @@
             "withOpacity": {
               "import": [
                 ".shared",
-                "mediumOpacity"
+                "opacity",
+                "medium"
               ]
             }
           }
@@ -306,7 +320,8 @@
             "withOpacity": {
               "import": [
                 ".shared",
-                "lowOpacity"
+                "opacity",
+                "low"
               ]
             }
           }
@@ -323,7 +338,8 @@
             "withOpacity": {
               "import": [
                 ".shared",
-                "disabledOpacity"
+                "opacity",
+                "disabled"
               ]
             }
           }

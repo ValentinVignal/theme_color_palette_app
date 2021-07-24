@@ -63,22 +63,22 @@ class ThemeColorPalette {
   static const radius = 4.0;
   /// Default Padding
   static const defaultPadding = 16.0;
-  /// Medium Opacity
-  static const highOpacity = 1.0;
-  /// Medium Opacity
-  static const mediumOpacity = 0.87;
-  /// Medium Opacity
-  static const lowOpacity = 0.6;
-  /// Medium Opacity
-  static const disabledOpacity = 0.38;
+  /// High opacity
+  static const opacity_high = 1.0;
+  /// Medium opacity
+  static const opacity_medium = 0.87;
+  /// Low opacity 
+  static const opacity_low = 0.6;
+  /// Disabled opacity
+  static const opacity_disabled = 0.38;
   /// High elevation
-  static const highElevation = 3.0;
+  static const elevation_high = 3.0;
   /// Medium elevation
-  static const mediumElevation = 2.0;
+  static const elevation_medium = 2.0;
   /// Low elevation
-  static const lowElevation = 1.0;
+  static const elevation_low = 1.0;
   /// None elevation
-  static const noneElevation = 0.0;
+  static const elevation_none = 0.0;
 
   /// Accent color
   @Deprecated('Use theme.accentColor instead')
