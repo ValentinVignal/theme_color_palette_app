@@ -3,7 +3,7 @@
     "light",
     "dark"
   ],
-  ".name": "ThemeColorPalette",
+  ".name": "themeColorPalette",
   ".description": "The Theme Color Palette",
   ".shared": {
     "radius": {
