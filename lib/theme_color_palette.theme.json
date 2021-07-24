@@ -85,47 +85,111 @@
     },
     "textEmphasis": {
       ".description": "The different text emphasis",
-      ".values": {
-        "accent": {
-          ".description": "Accent Color",
-          ".type": "color",
-          ".values": {
-            "light": {
+      "accent": {
+        ".description": "Accent Color",
+        ".type": "color",
+        ".values": {
+          "light": {
+            "import": [
+              "accentColor"
+            ]
+          }
+        }
+      },
+      "success": {
+        ".description": "Success Color",
+        ".type": "color",
+        ".values": {
+          "light": "ff7ec141"
+        }
+      },
+      "error": {
+        ".description": "Error Color",
+        ".type": "color",
+        ".values": {
+          "light": "ffe54d39"
+        }
+      },
+      "high": {
+        ".description": "High emphasis",
+        ".type": "color",
+        ".values": {
+          "light": "ff000000",
+          "dark": "ffffffff"
+        }
+      },
+      "medium": {
+        ".description": "Medium emphasis",
+        ".type": "color",
+        ".values": {
+          "light": {
+            "import": [
+              "textEmphasis",
+              "high"
+            ],
+            "withOpacity": {
               "import": [
-                "accentColor"
+                ".shared",
+                "mediumOpacity"
               ]
             }
           }
-        },
-        "success": {
-          ".description": "Success Color",
-          ".type": "color",
-          ".values": {
-            "light": "ff7ec141"
+        }
+      },
+      "low": {
+        ".description": "Low emphasis",
+        ".type": "color",
+        ".values": {
+          "light": {
+            "import": [
+              "textEmphasis",
+              "high"
+            ],
+            "withOpacity": {
+              "import": [
+                ".shared",
+                "lowOpacity"
+              ]
+            }
           }
-        },
-        "error": {
-          ".description": "Error Color",
-          ".type": "color",
-          ".values": {
-            "light": "ffe54d39"
+        }
+      },
+      "disabled": {
+        ".description": "Disabled emphasis",
+        ".type": "color",
+        ".values": {
+          "light": {
+            "import": [
+              "textEmphasis",
+              "high"
+            ],
+            "withOpacity": {
+              "import": [
+                ".shared",
+                "disabledOpacity"
+              ]
+            }
           }
-        },
+        }
+      },
+      "reversed": {
+        ".description": "Reversed text emphasis",
         "high": {
-          ".description": "High emphasis",
+          ".description": "Reversed high emphasis",
           ".type": "color",
           ".values": {
-            "light": "ff000000",
-            "dark": "ffffffff"
+            "light": "ffffffff",
+            "dark": "ff000000"
           }
         },
         "medium": {
-          ".description": "Medium emphasis",
+          ".description": "Reversed medium emphasis",
           ".type": "color",
           ".values": {
             "light": {
               "import": [
                 "textEmphasis",
+                "reversed",
                 "high"
               ],
               "withOpacity": {
@@ -138,12 +202,13 @@
           }
         },
         "low": {
-          ".description": "Low emphasis",
+          ".description": "Reversed low emphasis",
           ".type": "color",
           ".values": {
             "light": {
               "import": [
                 "textEmphasis",
+                "reversed",
                 "high"
               ],
               "withOpacity": {
@@ -156,12 +221,13 @@
           }
         },
         "disabled": {
-          ".description": "Disabled emphasis",
+          ".description": "Reversed disabled emphasis",
           ".type": "color",
           ".values": {
             "light": {
               "import": [
                 "textEmphasis",
+                "reversed",
                 "high"
               ],
               "withOpacity": {
@@ -169,76 +235,6 @@
                   ".shared",
                   "disabledOpacity"
                 ]
-              }
-            }
-          }
-        },
-        "reversed": {
-          ".description": "Reversed text emphasis",
-          ".values": {
-            "high": {
-              ".description": "Reversed high emphasis",
-              ".type": "color",
-              ".values": {
-                "light": "ffffffff",
-                "dark": "ff000000"
-              }
-            },
-            "medium": {
-              ".description": "Reversed medium emphasis",
-              ".type": "color",
-              ".values": {
-                "light": {
-                  "import": [
-                    "textEmphasis",
-                    "reversed",
-                    "high"
-                  ],
-                  "withOpacity": {
-                    "import": [
-                      ".shared",
-                      "mediumOpacity"
-                    ]
-                  }
-                }
-              }
-            },
-            "low": {
-              ".description": "Reversed low emphasis",
-              ".type": "color",
-              ".values": {
-                "light": {
-                  "import": [
-                    "textEmphasis",
-                    "reversed",
-                    "high"
-                  ],
-                  "withOpacity": {
-                    "import": [
-                      ".shared",
-                      "lowOpacity"
-                    ]
-                  }
-                }
-              }
-            },
-            "disabled": {
-              ".description": "Reversed disabled emphasis",
-              ".type": "color",
-              ".values": {
-                "light": {
-                  "import": [
-                    "textEmphasis",
-                    "reversed",
-                    "high"
-                  ],
-                  "withOpacity": {
-                    "import": [
-                      ".shared",
-                      "disabledOpacity"
-                    ]
-                  }
-                }
               }
             }
           }
@@ -247,22 +243,86 @@
     },
     "iconEmphasis": {
       ".description": "The different icon emphasis",
-      ".values": {
+      "high": {
+        ".description": "High emphasis",
+        ".type": "color",
+        ".values": {
+          "light": "ff000000",
+          "dark": "ffffffff"
+        }
+      },
+      "medium": {
+        ".description": "Medium emphasis",
+        ".type": "color",
+        ".values": {
+          "light": {
+            "import": [
+              "iconEmphasis",
+              "high"
+            ],
+            "withOpacity": {
+              "import": [
+                ".shared",
+                "mediumOpacity"
+              ]
+            }
+          }
+        }
+      },
+      "low": {
+        ".description": "Low emphasis",
+        ".type": "color",
+        ".values": {
+          "light": {
+            "import": [
+              "iconEmphasis",
+              "high"
+            ],
+            "withOpacity": {
+              "import": [
+                ".shared",
+                "lowOpacity"
+              ]
+            }
+          }
+        }
+      },
+      "disabled": {
+        ".description": "Disabled emphasis",
+        ".type": "color",
+        ".values": {
+          "light": {
+            "import": [
+              "iconEmphasis",
+              "high"
+            ],
+            "withOpacity": {
+              "import": [
+                ".shared",
+                "disabledOpacity"
+              ]
+            }
+          }
+        }
+      },
+      "reversed": {
+        ".description": "Reversed icon emphasis",
         "high": {
-          ".description": "High emphasis",
+          ".description": "Reversed high emphasis",
           ".type": "color",
           ".values": {
-            "light": "ff000000",
-            "dark": "ffffffff"
+            "light": "ffffffff",
+            "dark": "ff000000"
           }
         },
         "medium": {
-          ".description": "Medium emphasis",
+          ".description": "Reversed medium emphasis",
           ".type": "color",
           ".values": {
             "light": {
               "import": [
                 "iconEmphasis",
+                "reversed",
                 "high"
               ],
               "withOpacity": {
@@ -275,12 +335,13 @@
           }
         },
         "low": {
-          ".description": "Low emphasis",
+          ".description": "Reversed low emphasis",
           ".type": "color",
           ".values": {
             "light": {
               "import": [
                 "iconEmphasis",
+                "reversed",
                 "high"
               ],
               "withOpacity": {
@@ -293,12 +354,13 @@
           }
         },
         "disabled": {
-          ".description": "Disabled emphasis",
+          ".description": "Reversed disabled emphasis",
           ".type": "color",
           ".values": {
             "light": {
               "import": [
                 "iconEmphasis",
+                "reversed",
                 "high"
               ],
               "withOpacity": {
@@ -309,276 +371,190 @@
               }
             }
           }
-        },
-        "reversed": {
-          ".description": "Reversed icon emphasis",
-          ".values": {
-            "high": {
-              ".description": "Reversed high emphasis",
-              ".type": "color",
-              ".values": {
-                "light": "ffffffff",
-                "dark": "ff000000"
-              }
-            },
-            "medium": {
-              ".description": "Reversed medium emphasis",
-              ".type": "color",
-              ".values": {
-                "light": {
-                  "import": [
-                    "iconEmphasis",
-                    "reversed",
-                    "high"
-                  ],
-                  "withOpacity": {
-                    "import": [
-                      ".shared",
-                      "mediumOpacity"
-                    ]
-                  }
-                }
-              }
-            },
-            "low": {
-              ".description": "Reversed low emphasis",
-              ".type": "color",
-              ".values": {
-                "light": {
-                  "import": [
-                    "iconEmphasis",
-                    "reversed",
-                    "high"
-                  ],
-                  "withOpacity": {
-                    "import": [
-                      ".shared",
-                      "lowOpacity"
-                    ]
-                  }
-                }
-              }
-            },
-            "disabled": {
-              ".description": "Reversed disabled emphasis",
-              ".type": "color",
-              ".values": {
-                "light": {
-                  "import": [
-                    "iconEmphasis",
-                    "reversed",
-                    "high"
-                  ],
-                  "withOpacity": {
-                    "import": [
-                      ".shared",
-                      "disabledOpacity"
-                    ]
-                  }
-                }
-              }
-            }
-          }
         }
       }
     },
     "border": {
       ".description": "Borders",
-      ".values": {
-        "high": {
-          ".description": "High border",
-          ".type": "color",
-          ".values": {
-            "light": "ff5c5c5c",
-            "dark": "fff5f5f5"
-          }
-        },
-        "medium": {
-          ".description": "Medium border",
-          ".type": "color",
-          ".values": {
-            "light": "ffe0e0e0",
-            "dark": "ff474747"
-          }
+      "high": {
+        ".description": "High border",
+        ".type": "color",
+        ".values": {
+          "light": "ff5c5c5c",
+          "dark": "fff5f5f5"
+        }
+      },
+      "medium": {
+        ".description": "Medium border",
+        ".type": "color",
+        ".values": {
+          "light": "ffe0e0e0",
+          "dark": "ff474747"
         }
       }
     },
     "background": {
       ".description": "Backgrounds",
-      ".values": {
-        "disabled": {
-          ".description": "Disabled background",
-          ".type": "color",
-          ".values": {
-            "light": "fff8f8f8",
-            "dark": "ff121212"
-          }
-        },
-        "background1": {
-          ".description": "Background 1",
-          ".type": "color",
-          ".values": {
-            "light": "fff6f9fc",
-            "dark": "ff2e2e2e"
-          }
+      "disabled": {
+        ".description": "Disabled background",
+        ".type": "color",
+        ".values": {
+          "light": "fff8f8f8",
+          "dark": "ff121212"
+        }
+      },
+      "background1": {
+        ".description": "Background 1",
+        ".type": "color",
+        ".values": {
+          "light": "fff6f9fc",
+          "dark": "ff2e2e2e"
         }
       }
     },
     "floatingActionButton": {
       ".description": "Floating action button",
-      ".values": {
-        "disabledColor": {
-          ".description": "Disabled color",
-          ".type": "color",
-          ".values": {
-            "light": "ffadc4df",
-            "dark": "ff225281"
-          }
+      "disabledColor": {
+        ".description": "Disabled color",
+        ".type": "color",
+        ".values": {
+          "light": "ffadc4df",
+          "dark": "ff225281"
         }
       }
     },
     "task": {
       ".description": "Task color palette",
-      ".values": {
-        "notStarted": {
-          ".description": "Not started color",
-          ".type": "color",
-          ".values": {
-            "light": "ffed6e19"
-          }
-        },
-        "workInProgress": {
-          ".description": "Work in progress color",
-          ".type": "color",
-          ".values": {
-            "light": "ffeaa60f"
-          }
-        },
-        "completed": {
-          ".description": "Completed color",
-          ".type": "color",
-          ".values": {
-            "light": "ff81bf48"
-          }
+      "notStarted": {
+        ".description": "Not started color",
+        ".type": "color",
+        ".values": {
+          "light": "ffed6e19"
+        }
+      },
+      "workInProgress": {
+        ".description": "Work in progress color",
+        ".type": "color",
+        ".values": {
+          "light": "ffeaa60f"
+        }
+      },
+      "completed": {
+        ".description": "Completed color",
+        ".type": "color",
+        ".values": {
+          "light": "ff81bf48"
         }
       }
     },
     "form": {
       ".description": "Form color palette",
-      ".values": {
-        "draft": {
-          ".description": "Draft color",
-          ".type": "color",
-          ".values": {
-            "light": "ffed6e19"
-          }
-        },
-        "actionRequired": {
-          ".description": "Action required color",
-          ".type": "color",
-          ".values": {
-            "light": "ffeaa60f"
-          }
-        },
-        "completed": {
-          ".description": "Completed color",
-          ".type": "color",
-          ".values": {
-            "light": "ff666666"
-          }
-        },
-        "rejected": {
-          ".description": "Rejected color",
-          ".type": "color",
-          ".values": {
-            "light": "ffc73826"
-          }
+      "draft": {
+        ".description": "Draft color",
+        ".type": "color",
+        ".values": {
+          "light": "ffed6e19"
+        }
+      },
+      "actionRequired": {
+        ".description": "Action required color",
+        ".type": "color",
+        ".values": {
+          "light": "ffeaa60f"
+        }
+      },
+      "completed": {
+        ".description": "Completed color",
+        ".type": "color",
+        ".values": {
+          "light": "ff666666"
+        }
+      },
+      "rejected": {
+        ".description": "Rejected color",
+        ".type": "color",
+        ".values": {
+          "light": "ffc73826"
         }
       }
     },
     "notification": {
       ".description": "Notification color palette",
-      ".values": {
-        "countBubbleColor": {
-          ".type": "color",
-          ".description": "Color of the notification bubble",
-          ".values": {
-            "light": "fff26716"
-          }
+      "countBubbleColor": {
+        ".type": "color",
+        ".description": "Color of the notification bubble",
+        ".values": {
+          "light": "fff26716"
         }
       }
     },
     "projectTimeline": {
       ".description": "Project time line color palette",
-      ".values": {
-        "plannedLight": {
-          ".description": "Planned disc color",
-          ".type": "color",
-          ".values": {
-            "light": "ffeef3f8"
-          }
-        },
-        "planned": {
-          ".description": "Planned text color",
-          ".type": "color",
-          ".values": {
-            "light": "ff647e9b"
-          }
-        },
-        "start": {
-          ".description": "Start color",
-          ".type": "color",
-          ".values": {
-            "light": "ffeaa60f"
-          }
-        },
-        "completed": {
-          ".description": "Completed color",
-          ".type": "color",
-          ".values": {
-            "light": "ff7ec141"
-          }
-        },
-        "today": {
-          ".description": "Today disc color",
-          ".type": "color",
-          ".values": {
-            "light": "ff2864ac",
-            "dark": "ffc1dbef"
-          }
-        },
-        "active": {
-          ".description": "Color for the Timeline Base",
-          ".type": "color",
-          ".values": {
-            "light": "ffeef3f8"
-          }
-        },
-        "progress": {
-          ".description": " Color for the active part of the Timeline bar (Start -> Today/Completed)",
-          ".type": "color",
-          ".values": {
-            "light": "ff2864ac"
-          }
+      "plannedLight": {
+        ".description": "Planned disc color",
+        ".type": "color",
+        ".values": {
+          "light": "ffeef3f8"
+        }
+      },
+      "planned": {
+        ".description": "Planned text color",
+        ".type": "color",
+        ".values": {
+          "light": "ff647e9b"
+        }
+      },
+      "start": {
+        ".description": "Start color",
+        ".type": "color",
+        ".values": {
+          "light": "ffeaa60f"
+        }
+      },
+      "completed": {
+        ".description": "Completed color",
+        ".type": "color",
+        ".values": {
+          "light": "ff7ec141"
+        }
+      },
+      "today": {
+        ".description": "Today disc color",
+        ".type": "color",
+        ".values": {
+          "light": "ff2864ac",
+          "dark": "ffc1dbef"
+        }
+      },
+      "active": {
+        ".description": "Color for the Timeline Base",
+        ".type": "color",
+        ".values": {
+          "light": "ffeef3f8"
+        }
+      },
+      "progress": {
+        ".description": " Color for the active part of the Timeline bar (Start -> Today/Completed)",
+        ".type": "color",
+        ".values": {
+          "light": "ff2864ac"
         }
       }
     },
     "pin": {
       ".description": "Pin theme",
-      ".values": {
-        "iconColor": {
-          ".description": "Icon Color",
-          ".type": "color",
-          ".values": {
-            "light": "ffffffff"
-          }
-        },
-        "disabledBackgroundColor": {
-          ".description": "The background color when the pin is disabled",
-          ".type": "color",
-          ".values": {
-            "light": "ff8d8d8d"
-          }
+      "iconColor": {
+        ".description": "Icon Color",
+        ".type": "color",
+        ".values": {
+          "light": "ffffffff"
+        }
+      },
+      "disabledBackgroundColor": {
+        ".description": "The background color when the pin is disabled",
+        ".type": "color",
+        ".values": {
+          "light": "ff8d8d8d"
         }
       }
     },
