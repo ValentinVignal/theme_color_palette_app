@@ -2,7 +2,27 @@
 
 import 'package:flutter/material.dart';
 
-// -------------------- ThemeColorPalette --------------------
+/// Different Themes
+enum Themes {
+  /// Light theme
+  light,
+  /// Dark theme
+  dark,
+}
+
+extension ThemesExtension on Themes {
+  /// Color palette
+  ThemeColorPalette get colorPalette {
+    switch (this) {
+      case Themes.dark:
+        return const ThemeColorPalette.dark();
+      case Themes.light:
+      default:
+        return const ThemeColorPalette.light();
+
+    }
+  }
+}// -------------------- ThemeColorPalette --------------------
 
 /// The Theme Color Palette
 class ThemeColorPalette {
