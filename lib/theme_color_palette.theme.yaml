@@ -115,12 +115,11 @@
     .description: Secondary color
     .type: color
     light: ff7ec141
-
   textEmphasis:
     .description: The different text emphasis
-    .flutter: theme.accentColor
     accent:
       .description: Accent color
+      .flutter: theme.accentColor
       .type: color
       light:
         import: accentColor
@@ -158,3 +157,203 @@
         import: textEmphasis.high
         withOpacity:
           import: .shared.opacity.disabled
+    reversed:
+      .description: Reversed text emphasis
+      high:
+        .description: Reversed high emphasis
+        .type: color
+        light: ffffffff
+        dark: ff000000
+      medium:
+        .description: Reversed medium emphasis
+        .type: color
+        light:
+          import: textEmphasis.reversed.high
+          withOpacity:
+            import: .shared.opacity.medium
+      low:
+        .description: Reversed low emphasis
+        .type: color
+        light:
+          import: textEmphasis.reversed.high
+          withOpacity:
+            import: .shared.opacity.low
+      disabled:
+        .description: Reversed disabled emphasis
+        .type: color
+        light:
+          import: textEmphasis.reversed.high
+          withOpacity:
+            import: .shared.opacity.disabled
+  iconEmphasis:
+    .description: The different icon emphasis
+    high:
+      .description: High emphasis
+      .type: color
+      light: ff000000
+      dark: ffffffff
+    medium:
+      .description: Medium emphasis
+      .type: color
+      light:
+        import: iconEmphasis.high
+        withOpacity:
+          import: .shared.opacity.medium
+    low:
+      .description: Low emphasis
+      .type: color
+      light:
+        import: iconEmphasis.high
+        withOpacity:
+          import: .shared.opacity.low
+    disabled:
+      .description: Disabled emphasis
+      .type: color
+      light:
+        import: iconEmphasis.high
+        withOpacity:
+          import: .shared.opacity.disabled
+    reversed:
+      .description: Reversed icon emphasis
+      high:
+        .description: Reversed high emphasis
+        .type: color
+        light: ffffffff
+        dark: ff000000
+      medium:
+        .description: Reversed medium emphasis
+        .type: color
+        light:
+          import: iconEmphasis.reversed.high
+          withOpacity:
+            import: .shared.opacity.medium
+      low:
+        .description: Reversed low emphasis
+        .type: color
+        light:
+          import: iconEmphasis.reversed.high
+          withOpacity:
+            import: .shared.opacity.low
+      disabled:
+        .description: Reversed disabled emphasis
+        .type: color
+        light:
+          import: iconEmphasis.reversed.high
+          withOpacity:
+            import: .shared.opacity.disabled
+  border:
+    .description: Borders
+    high:
+      .description: High border
+      .type: color
+      light: ff5c5c5c
+      dark: fff5f5f5
+    medium:
+      .description: Medium border
+      .type: color
+      light: ffe0e0e0
+      dark: ff474747
+  background:
+    .description: Backgrounds
+    disabled:
+      .description: Disabled background
+      .type: color
+      light: fff8f8f8
+      dark: ff121212
+    background1:
+      .description: Background 1
+      .type: color
+      light: fff6f9fc
+      dark: ff2e2e2e
+  floatingActionButton:
+    .description: Floating action button
+    disabledColor:
+      .description: Disabled color
+      .type: color
+      light: ffadc4df
+      dark: ff225281
+  task:
+    .description: Task color palette
+    notStarted:
+      .description: Not started color
+      .type: color
+      light: ffed6e19
+    workInProgress:
+      .description: Work in progress color
+      .type: color
+      light: ffeaa60f
+    completed:
+      .description: Completed color
+      .type: color
+      light: ff81bf48
+  form:
+    .description: Form color palette
+    draft:
+      .description: Draft color
+      .type: color
+      light: ffed6e19
+    actionRequired:
+      .description: Action required color
+      .type: color
+      light: ffeaa60f
+    completed:
+      .description: Completed color
+      .type: color
+      light: ff666666
+    rejected:
+      .description: Rejected color
+      .type: color
+      light: ffc73826
+  notification:
+    .description: Notification color palette
+    countBubbleColor:
+      .type: color
+      .description: Color of the notification bubble
+      light: fff26716
+  projectTimeline:
+    .description: Project time line color palette
+    plannedLight:
+      .description: Planned disc color
+      .type: color
+      light: ffeef3f8
+    planned:
+      .description: Planned text color
+      .type: color
+      light: ff647e9b
+    start:
+      .description: Start color
+      .type: color
+      light: ffeaa60f
+    completed:
+      .description: Completed color
+      .type: color
+      light: ff7ec141
+    today:
+      .description: Today disc color
+      .type: color
+      light: ff2864ac
+      dark: ffc1dbef
+    active:
+      .description: Color for the Timeline Base
+      .type: color
+      light: ffeef3f8
+    progress:
+      .description: Color for the active part of the Timeline bar (Start -> Today/Completed)
+      .type: color
+      light: ff2864ac
+  pin:
+    .description: Pin theme
+    iconColor:
+      .description: Icon Color
+      .type: color
+      light: ffffffff
+    disabledBackgroundColor:
+      .description: The background color when the pin is disabled
+      .type: color
+      light: ff8d8d8d
+  cardColor:
+    .description: Card Color
+    .flutter: theme.cardColor
+    .type: color
+    light: ffffffff
+    dark: ff1e1e1e
