@@ -32,7 +32,10 @@ class ThemeColorPalette {
   const ThemeColorPalette.light():
     accentColor = const Color(0xff2864ac),
     primaryColor = const Color(0xff5182bb),
+    primaryColorLight = const Color(0xffd5e0ee),
     secondaryColor = const Color(0xff7ec141),
+    errorColor = const Color(0xff354d39),
+    disabledColor = const Color(0x61000000),
     textEmphasis = const ThemeColorPalette$TextEmphasis.light(),
     iconEmphasis = const ThemeColorPalette$IconEmphasis.light(),
     border = const ThemeColorPalette$Border.light(),
@@ -43,12 +46,17 @@ class ThemeColorPalette {
     notification = const ThemeColorPalette$Notification.light(),
     projectTimeline = const ThemeColorPalette$ProjectTimeline.light(),
     pin = const ThemeColorPalette$Pin.light(),
-    cardColor = const Color(0xffffffff);
+    hoverColor = const Color(0x0a000000),
+    appBarTheme = const ThemeColorPalette$AppBarTheme.light(),
+    bottomAppBarTheme = const ThemeColorPalette$BottomAppBarTheme.light();
   /// The Theme Color Palette
   const ThemeColorPalette.dark():
     accentColor = const Color(0xff699fcf),
     primaryColor = const Color(0xffc1dbef),
+    primaryColorLight = const Color(0xff2c2c2c),
     secondaryColor = const Color(0xff7ec141),
+    errorColor = const Color(0xff354d39),
+    disabledColor = const Color(0x61ffffff),
     textEmphasis = const ThemeColorPalette$TextEmphasis.dark(),
     iconEmphasis = const ThemeColorPalette$IconEmphasis.dark(),
     border = const ThemeColorPalette$Border.dark(),
@@ -59,7 +67,9 @@ class ThemeColorPalette {
     notification = const ThemeColorPalette$Notification.dark(),
     projectTimeline = const ThemeColorPalette$ProjectTimeline.dark(),
     pin = const ThemeColorPalette$Pin.dark(),
-    cardColor = const Color(0xff1e1e1e);
+    hoverColor = const Color(0xa699fcf),
+    appBarTheme = const ThemeColorPalette$AppBarTheme.dark(),
+    bottomAppBarTheme = const ThemeColorPalette$BottomAppBarTheme.dark();
 
   /// Default radius
   static const radius = 4.0;
@@ -73,6 +83,8 @@ class ThemeColorPalette {
   static const opacity_low = 0.6;
   /// Low opacity
   static const opacity_disabled = 0.6;
+  /// Hover opacity
+  static const opacity_hover = 0.04;
   /// High elevation
   static const elevation_high = 3.0;
   /// Medium elevation
@@ -81,6 +93,8 @@ class ThemeColorPalette {
   static const elevation_low = 1.0;
   /// None elevation
   static const elevation_none = 0.0;
+  /// Thickness of the Dividers
+  static const divider_thickness = 2.0;
 
   /// The accent Color
   @Deprecated('Use theme.accentColor instead')
@@ -88,8 +102,17 @@ class ThemeColorPalette {
   /// Primary color
   @Deprecated('Use theme.primaryColor instead')
   final Color primaryColor;
+  /// Primary color light
+  @Deprecated('Use theme.primaryColorLight instead')
+  final Color primaryColorLight;
   /// Secondary color
   final Color secondaryColor;
+  /// Error Color
+  @Deprecated('Use theme.errorColor instead')
+  final Color errorColor;
+  /// Disabled color
+  @Deprecated('Use theme.disabledColor instead')
+  final Color disabledColor;
   /// The different text emphasis
   final ThemeColorPalette$TextEmphasis textEmphasis;
   /// The different icon emphasis
@@ -110,9 +133,13 @@ class ThemeColorPalette {
   final ThemeColorPalette$ProjectTimeline projectTimeline;
   /// Pin theme
   final ThemeColorPalette$Pin pin;
-  /// Card Color
-  @Deprecated('Use theme.cardColor instead')
-  final Color cardColor;
+  /// Overlay color
+  @Deprecated('Use theme.hoverColor instead')
+  final Color hoverColor;
+  /// 
+  final ThemeColorPalette$AppBarTheme appBarTheme;
+  /// 
+  final ThemeColorPalette$BottomAppBarTheme bottomAppBarTheme;
 }
 
 
@@ -256,16 +283,21 @@ class ThemeColorPalette$Border {
   /// Borders
   const ThemeColorPalette$Border.light():
     high = const Color(0xff5c5c5c),
-    medium = const Color(0xffe0e0e0);
+    medium = const Color(0xffe0e0e0),
+    divider = const Color(0x0a000000);
   /// Borders
   const ThemeColorPalette$Border.dark():
     high = const Color(0xfff5f5f5),
-    medium = const Color(0xff474747);
+    medium = const Color(0xff474747),
+    divider = const Color(0xff434343);
 
   /// High border
   final Color high;
   /// Medium border
   final Color medium;
+  /// Color for the Dividers
+  @Deprecated('Use theme.dividerColor instead')
+  final Color divider;
 }
 
 
@@ -276,16 +308,36 @@ class ThemeColorPalette$Background {
   /// Backgrounds
   const ThemeColorPalette$Background.light():
     disabled = const Color(0xfff8f8f8),
-    background1 = const Color(0xfff6f9fc);
+    backgroundColor = const Color(0xfff8f8f8),
+    background1 = const Color(0xfff6f9fc),
+    scaffold = const Color(0xfff3f2ef),
+    canvas = const Color(0xfff8f8f8),
+    card = const Color(0xffffffff);
   /// Backgrounds
   const ThemeColorPalette$Background.dark():
     disabled = const Color(0xff121212),
-    background1 = const Color(0xff2e2e2e);
+    backgroundColor = const Color(0xff000000),
+    background1 = const Color(0xff2e2e2e),
+    scaffold = const Color(0xff121212),
+    canvas = const Color(0xfff8f8f8),
+    card = const Color(0xff1e1e1e);
 
   /// Disabled background
   final Color disabled;
+  /// Background color
+  @Deprecated('Use theme.backgroundColor instead')
+  final Color backgroundColor;
   /// Background 1
   final Color background1;
+  /// Scaffold background color
+  @Deprecated('Use theme.scaffoldBackgroundColor instead')
+  final Color scaffold;
+  /// Canvas background color
+  @Deprecated('Use theme.canvasColor instead')
+  final Color canvas;
+  /// Card Color
+  @Deprecated('Use theme.cardColor instead')
+  final Color card;
 }
 
 
@@ -295,13 +347,28 @@ class ThemeColorPalette$Background {
 class ThemeColorPalette$FloatingActionButton {
   /// Floating action button
   const ThemeColorPalette$FloatingActionButton.light():
-    disabledColor = const Color(0xffadc4df);
+    disabledColor = const Color(0xffadc4df),
+    backgroundColor = const Color(0xff2864ac),
+    foregroundColor = const Color(0xffffffff),
+    disabledElevation = 0.0;
   /// Floating action button
   const ThemeColorPalette$FloatingActionButton.dark():
-    disabledColor = const Color(0xff225281);
+    disabledColor = const Color(0xff225281),
+    backgroundColor = const Color(0xff699fcf),
+    foregroundColor = const Color(0xff000000),
+    disabledElevation = 0.0;
 
   /// Disabled color
   final Color disabledColor;
+  /// Background color of the floating action button
+  @Deprecated('Use theme.floatingActionButtonTheme.backgroundColor instead')
+  final Color backgroundColor;
+  /// Icon color of the floating action button
+  @Deprecated('Use theme.floatingActionButtonTheme.foregroundColor instead')
+  final Color foregroundColor;
+  /// Disabled elevation of the floating action button
+  @Deprecated('Use theme.floatingActionButtonTheme.disabledElevation instead')
+  final double disabledElevation;
 }
 
 
@@ -430,6 +497,45 @@ class ThemeColorPalette$Pin {
   final Color iconColor;
   /// The background color when the pin is disabled
   final Color disabledBackgroundColor;
+}
+
+
+// -------------------- ThemeColorPalette$AppBarTheme --------------------
+
+/// 
+class ThemeColorPalette$AppBarTheme {
+  /// 
+  const ThemeColorPalette$AppBarTheme.light():
+    color = const Color(0xff5182bb),
+    foregroundColor = const Color(0xffffffff);
+  /// 
+  const ThemeColorPalette$AppBarTheme.dark():
+    color = const Color(0xff1e1e1e),
+    foregroundColor = const Color(0xffffffff);
+
+  /// Color of the app bar
+  @Deprecated('Use theme.appBarTheme.color instead')
+  final Color color;
+  /// Text and icon color of the app bar
+  @Deprecated('Use theme.appBarTheme.foregroundColor instead')
+  final Color foregroundColor;
+}
+
+
+// -------------------- ThemeColorPalette$BottomAppBarTheme --------------------
+
+/// 
+class ThemeColorPalette$BottomAppBarTheme {
+  /// 
+  const ThemeColorPalette$BottomAppBarTheme.light():
+    color = const Color(0xfff8f8f8);
+  /// 
+  const ThemeColorPalette$BottomAppBarTheme.dark():
+    color = const Color(0xff2e2e2e);
+
+  /// Color of the bottom app bar
+  @Deprecated('Use theme.bottomAppBarTheme.color instead')
+  final Color color;
 }
 
 

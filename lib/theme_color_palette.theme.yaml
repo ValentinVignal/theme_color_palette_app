@@ -79,6 +79,10 @@
       .description: Low opacity
       .type: double
       .value: 0.6
+    hover:
+      .description: Hover opacity
+      .type: double
+      .value: 0.04
   elevation:
     high:
       .description: High elevation
@@ -96,6 +100,11 @@
       .description: None elevation
       .type: double
       .value: 0
+  divider:
+    thickness:
+      .description: Thickness of the Dividers
+      .type: double
+      .value: 2
 .themed:
   # Themed values are values that change between the different themes
   # The default theme must ALWAYS be specified
@@ -111,10 +120,27 @@
     .type: color
     light: ff5182bb
     dark: ffc1dbef
+  primaryColorLight:
+    .description: Primary color light
+    .type: color
+    .flutter: theme.primaryColorLight
+    light: ffd5e0ee
+    dark: ff2c2c2c
   secondaryColor:
     .description: Secondary color
     .type: color
     light: ff7ec141
+  errorColor:
+    .description: Error Color
+    .type: color
+    .flutter: theme.errorColor
+    light: ff354d39
+  disabledColor:
+    .description: Disabled color
+    .type: color
+    .flutter: theme.disabledColor
+    light: "61000000"
+    dark: 61ffffff
   textEmphasis:
     .description: The different text emphasis
     accent:
@@ -253,6 +279,12 @@
       .type: color
       light: ffe0e0e0
       dark: ff474747
+    divider:
+      .description: Color for the Dividers
+      .type: color
+      .flutter: theme.dividerColor
+      light: 0a000000
+      dark: ff434343
   background:
     .description: Backgrounds
     disabled:
@@ -260,11 +292,34 @@
       .type: color
       light: fff8f8f8
       dark: ff121212
+    backgroundColor:
+      .description: Background color
+      .flutter: theme.backgroundColor
+      .type: color
+      light: fff8f8f8
+      dark: ff000000
     background1:
       .description: Background 1
       .type: color
       light: fff6f9fc
       dark: ff2e2e2e
+    scaffold:
+      .description: Scaffold background color
+      .type: color
+      .flutter: theme.scaffoldBackgroundColor
+      light: fff3f2ef
+      dark: ff121212
+    canvas:
+      .description: Canvas background color
+      .type: color
+      .flutter: theme.canvasColor
+      light: fff8f8f8 # TODO(Valentin): Find what is the color in dark theme
+    card:
+      .description: Card Color
+      .flutter: theme.cardColor
+      .type: color
+      light: ffffffff
+      dark: ff1e1e1e
   floatingActionButton:
     .description: Floating action button
     disabledColor:
@@ -272,6 +327,23 @@
       .type: color
       light: ffadc4df
       dark: ff225281
+    backgroundColor:
+      .description: Background color of the floating action button
+      .type: color
+      .flutter: theme.floatingActionButtonTheme.backgroundColor
+      light:
+        import: accentColor
+    foregroundColor:
+      .description: Icon color of the floating action button
+      .type: color
+      .flutter: theme.floatingActionButtonTheme.foregroundColor
+      light: ffffffff
+      dark: ff000000
+    disabledElevation:
+      .description: Disabled elevation of the floating action button
+      .type: double
+      .flutter: theme.floatingActionButtonTheme.disabledElevation
+      light: 0
   task:
     .description: Task color palette
     notStarted:
@@ -351,9 +423,34 @@
       .description: The background color when the pin is disabled
       .type: color
       light: ff8d8d8d
-  cardColor:
-    .description: Card Color
-    .flutter: theme.cardColor
+  hoverColor:
+    .description: Overlay color
     .type: color
-    light: ffffffff
-    dark: ff1e1e1e
+    .flutter: theme.hoverColor
+    light: 0a000000
+    dark:
+      import: accentColor
+      withOpacity:
+        import: .shared.opacity.hover
+  appBarTheme:
+    color:
+      .description: Color of the app bar
+      .type: color
+      .flutter: theme.appBarTheme.color
+      light:
+        import: primaryColor
+      dark:
+        import: background.card
+    foregroundColor:
+      .description: Text and icon color of the app bar
+      .type: color
+      .flutter: theme.appBarTheme.foregroundColor
+      light: ffffffff
+  bottomAppBarTheme:
+    color:
+      .description: Color of the bottom app bar
+      .type: color
+      .flutter: theme.bottomAppBarTheme.color
+      light:
+        import: background.canvas
+      dark: ff2e2e2e
