@@ -1,16 +1,59 @@
-# This yaml file describes the different themes and should be edited by the design team only
+# This yaml file describes the different themes.
+# It should be edited by the design team only
+
+# Each object has several properties:
+# - .name:
+#   The name of the object.
+#   It should be in `camelCase`: https://en.wikipedia.org/wiki/Camel_case
+# - .description:
+#   A short description of the object so we know what it is used for
+#   This description will be comments in the code, the developers will see when they code/use it
+
+# # Values:
+#
+# There are different type of values:
+# - int
+#     Number with no decimals (ex: 0, 1, 2, 3, 4, 5...)
+# - double
+#     Number with decimals (ex: 0.5, 1.0 ...). If you are not sure whether a variable should be a double or an int, ask a dev
+# - color
+#     Should "aarrggbb" format
+#     When importing a color, you can add the parameter `withOpacity` and a double in [0, 1].
+#     You can also import the opacity used in the `withOpacity` parameter
+# - font weight
+#     The different values are:
+#       - w100, thin
+#       - w200, extraLight
+#       - w300, light
+#       - w400, medium
+#       - w500, normal, regular, plain
+#       - w600, semiBold
+#       - w700, bold
+#       - w800, extraBold
+#       - w900, black
+
+# .flutter:
+#   `.flutter` property is used when a value is used to sed the Flutter Material theme (ex: cardColor).
+#   Specify what value it specifies in the flutter theme (ex: `theme.cardColor`)
+#   It will indicates to the user to use the `cardColor` from the Flutter Material Theme instead
+
+# # Imports
+#
+# You can only import values that have been PREVIOUSLY defined (aka higher in the file).
 
 # Version number of the theme
 .version: 0.0.0
 .themes:
   # Those are the different themes of the app.
   # The first one is the default theme and needs to be specified in each and every themed objects
+  # If a theme is not specified for an object, it will use the value of the light theme
   - light
   - dark
 .name: themeColorPalette
 .description: The Theme Color Palette
 .shared:
   # The shared values are constants independent of the theme
+  # To import those values, you need to prefix the import with `.shared`
   radius:
     .description: Default radius
     .type: double
@@ -19,14 +62,43 @@
     .description: Default padding
     .type: double
     .value: 16
-  # ... Other values
   opacity:
+    high:
+      .description: High opacity
+      .type: double
+      .value: 1
     medium:
       .description: Medium opacity
       .type: double
       .value: 0.87
-  # ... Need to add other values
+    low:
+      .description: Low opacity
+      .type: double
+      .value: 0.6
+    disabled:
+      .description: Low opacity
+      .type: double
+      .value: 0.6
+  elevation:
+    high:
+      .description: High elevation,
+      .type: double,
+      .value: 3
+    medium:
+      .description: Medium elevation,
+      .type: double,
+      .value: 2
+    low:
+      .description: Low elevation,
+      .type: double,
+      .value: 1
+    none:
+      .description: None elevation,
+      .type: double,
+      .value: 0
 .themed:
+  # Themed values are values that change between the different themes
+  # The default theme must ALWAYS be specified
   accentColor:
     .description: The accent Color
     .flutter: theme.accentColor
