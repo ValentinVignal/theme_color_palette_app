@@ -3,6 +3,7 @@
     "light",
     "dark"
   ],
+  ".version": "0.0.0",
   ".name": "themeColorPalette",
   ".description": "The Theme Color Palette",
   ".shared": {

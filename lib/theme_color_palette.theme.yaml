@@ -1,4 +1,10 @@
+# This yaml file describes the different themes and should be edited by the design team only
+
+# Version number of the theme
+.version: 0.0.0
 .themes:
+  # Those are the different themes of the app.
+  # The first one is the default theme and needs to be specified in each and every themed objects
   - light
   - dark
 .name: themeColorPalette
@@ -14,41 +20,43 @@
     .type: double
     .value: 16
   # ... Other values
-  mediumOpacity:
-    .description: Medium opacity
-    .type: double
-    .value: 0.87
+  opacity:
+    medium:
+      .description: Medium opacity
+      .type: double
+      .value: 0.87
   # ... Need to add other values
 .themed:
   accentColor:
     .description: The accent Color
     .flutter: theme.accentColor
     .type: color
-    .values:
-      light: ff2864ac
-      dark: ff699fcf
+    light: ff2864ac
+    dark: ff699fcf
   # ... Other values
   textEmphasis:
     .description: The different text emphasis
-    .values:
-      accent:
-        .description: Accent color
-        .type: color
-        .values:
-          light:
-            import: accentColor
-      # ... Other values
-      high:
-        .description: High emphasis
-        .type: color
-        .values:
-          light: ff000000
-          dark: ffffffff
-      medium:
-        .description: Medium emphasis
-        .type: color
-        .values:
-          light:
-            import: textEmphasis.high
-            withOpacity:
-              import: .shared.mediumOpacity
+    accent:
+      .description: Accent color
+      .type: color
+      light:
+        import:
+          - accentColor
+    # ... Other values
+    high:
+      .description: High emphasis
+      .type: color
+      light: ff000000
+      dark: ffffffff
+    medium:
+      .description: Medium emphasis
+      .type: color
+      light:
+        import:
+          - textEmphasis
+          - high
+        withOpacity:
+          import:
+            - .shared
+            - opacity
+            - medium

@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+// Version: 0.0.0
+
 /// Different Themes
 enum Themes {
   /// Light theme
