@@ -123,8 +123,7 @@
       .description: Accent color
       .type: color
       light:
-        import:
-          - accentColor
+        import: accentColor
     success:
       .description: Success Color
       .type: color
@@ -142,35 +141,20 @@
       .description: Medium emphasis
       .type: color
       light:
-        import:
-          - textEmphasis
-          - high
+        import: textEmphasis.high
         withOpacity:
-          import:
-            - .shared
-            - opacity
-            - medium
+          import: .shared.opacity.medium
     low:
       .description: Low emphasis
       .type: color
       light:
-        import:
-          - textEmphasis
-          - high
+        import: textEmphasis.high
         withOpacity:
-          import:
-            - .shared
-            - opacity
-            - low
+          import: .shared.opacity.low
     disabled:
       .description: Disabled emphasis
       .type: color
       light:
-        import:
-          - textEmphasis
-          - high
+        import: textEmphasis.high
         withOpacity:
-          import:
-            - .shared
-            - opacity
-            - disabled
+          import: .shared.opacity.disabled
