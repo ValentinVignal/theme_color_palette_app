@@ -81,20 +81,20 @@
       .value: 0.6
   elevation:
     high:
-      .description: High elevation,
-      .type: double,
+      .description: High elevation
+      .type: double
       .value: 3
     medium:
-      .description: Medium elevation,
-      .type: double,
+      .description: Medium elevation
+      .type: double
       .value: 2
     low:
-      .description: Low elevation,
-      .type: double,
+      .description: Low elevation
+      .type: double
       .value: 1
     none:
-      .description: None elevation,
-      .type: double,
+      .description: None elevation
+      .type: double
       .value: 0
 .themed:
   # Themed values are values that change between the different themes
@@ -105,16 +105,34 @@
     .type: color
     light: ff2864ac
     dark: ff699fcf
-  # ... Other values
+  primaryColor:
+    .description: Primary color
+    .flutter: theme.primaryColor
+    .type: color
+    light: ff5182bb
+    dark: ffc1dbef
+  secondaryColor:
+    .description: Secondary color
+    .type: color
+    light: ff7ec141
+
   textEmphasis:
     .description: The different text emphasis
+    .flutter: theme.accentColor
     accent:
       .description: Accent color
       .type: color
       light:
         import:
           - accentColor
-    # ... Other values
+    success:
+      .description: Success Color
+      .type: color
+      light: ff7ec141
+    error:
+      .description: Error Color
+      .type: color
+      light: ffe54d39
     high:
       .description: High emphasis
       .type: color
@@ -132,3 +150,27 @@
             - .shared
             - opacity
             - medium
+    low:
+      .description: Low emphasis
+      .type: color
+      light:
+        import:
+          - textEmphasis
+          - high
+        withOpacity:
+          import:
+            - .shared
+            - opacity
+            - low
+    disabled:
+      .description: Disabled emphasis
+      .type: color
+      light:
+        import:
+          - textEmphasis
+          - high
+        withOpacity:
+          import:
+            - .shared
+            - opacity
+            - disabled
