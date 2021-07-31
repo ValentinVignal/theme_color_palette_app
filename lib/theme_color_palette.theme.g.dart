@@ -28,6 +28,28 @@ extension ThemesExtension on Themes {
 
 /// The Theme Color Palette
 class ThemeColorPalette {
+  const ThemeColorPalette({
+    @required this.accentColor,
+    @required this.primaryColor,
+    @required this.primaryColorLight,
+    @required this.secondaryColor,
+    @required this.errorColor,
+    @required this.disabledColor,
+    @required this.textEmphasis,
+    @required this.iconEmphasis,
+    @required this.border,
+    @required this.background,
+    @required this.floatingActionButton,
+    @required this.task,
+    @required this.form,
+    @required this.notification,
+    @required this.projectTimeline,
+    @required this.pin,
+    @required this.hoverColor,
+    @required this.appBarTheme,
+    @required this.bottomAppBarTheme,
+  });
+
   /// The Theme Color Palette
   const ThemeColorPalette.light():
     accentColor = const Color(0xff2864ac),
@@ -147,6 +169,17 @@ class ThemeColorPalette {
 
 /// The different text emphasis
 class ThemeColorPalette$TextEmphasis {
+  const ThemeColorPalette$TextEmphasis({
+    @required this.accent,
+    @required this.success,
+    @required this.error,
+    @required this.high,
+    @required this.medium,
+    @required this.low,
+    @required this.disabled,
+    @required this.reversed,
+  });
+
   /// The different text emphasis
   const ThemeColorPalette$TextEmphasis.light():
     accent = const Color(0xff2864ac),
@@ -192,6 +225,13 @@ class ThemeColorPalette$TextEmphasis {
 
 /// Reversed text emphasis
 class ThemeColorPalette$TextEmphasis$Reversed {
+  const ThemeColorPalette$TextEmphasis$Reversed({
+    @required this.high,
+    @required this.medium,
+    @required this.low,
+    @required this.disabled,
+  });
+
   /// Reversed text emphasis
   const ThemeColorPalette$TextEmphasis$Reversed.light():
     high = const Color(0xffffffff),
@@ -220,6 +260,14 @@ class ThemeColorPalette$TextEmphasis$Reversed {
 
 /// The different icon emphasis
 class ThemeColorPalette$IconEmphasis {
+  const ThemeColorPalette$IconEmphasis({
+    @required this.high,
+    @required this.medium,
+    @required this.low,
+    @required this.disabled,
+    @required this.reversed,
+  });
+
   /// The different icon emphasis
   const ThemeColorPalette$IconEmphasis.light():
     high = const Color(0xff000000),
@@ -252,6 +300,13 @@ class ThemeColorPalette$IconEmphasis {
 
 /// Reversed icon emphasis
 class ThemeColorPalette$IconEmphasis$Reversed {
+  const ThemeColorPalette$IconEmphasis$Reversed({
+    @required this.high,
+    @required this.medium,
+    @required this.low,
+    @required this.disabled,
+  });
+
   /// Reversed icon emphasis
   const ThemeColorPalette$IconEmphasis$Reversed.light():
     high = const Color(0xffffffff),
@@ -280,6 +335,12 @@ class ThemeColorPalette$IconEmphasis$Reversed {
 
 /// Borders
 class ThemeColorPalette$Border {
+  const ThemeColorPalette$Border({
+    @required this.high,
+    @required this.medium,
+    @required this.divider,
+  });
+
   /// Borders
   const ThemeColorPalette$Border.light():
     high = const Color(0xff5c5c5c),
@@ -305,6 +366,15 @@ class ThemeColorPalette$Border {
 
 /// Backgrounds
 class ThemeColorPalette$Background {
+  const ThemeColorPalette$Background({
+    @required this.disabled,
+    @required this.backgroundColor,
+    @required this.background1,
+    @required this.scaffold,
+    @required this.canvas,
+    @required this.card,
+  });
+
   /// Backgrounds
   const ThemeColorPalette$Background.light():
     disabled = const Color(0xfff8f8f8),
@@ -345,6 +415,13 @@ class ThemeColorPalette$Background {
 
 /// Floating action button
 class ThemeColorPalette$FloatingActionButton {
+  const ThemeColorPalette$FloatingActionButton({
+    @required this.disabledColor,
+    @required this.backgroundColor,
+    @required this.foregroundColor,
+    @required this.disabledElevation,
+  });
+
   /// Floating action button
   const ThemeColorPalette$FloatingActionButton.light():
     disabledColor = const Color(0xffadc4df),
@@ -376,6 +453,12 @@ class ThemeColorPalette$FloatingActionButton {
 
 /// Task color palette
 class ThemeColorPalette$Task {
+  const ThemeColorPalette$Task({
+    @required this.notStarted,
+    @required this.workInProgress,
+    @required this.completed,
+  });
+
   /// Task color palette
   const ThemeColorPalette$Task.light():
     notStarted = const Color(0xffed6e19),
@@ -400,6 +483,13 @@ class ThemeColorPalette$Task {
 
 /// Form color palette
 class ThemeColorPalette$Form {
+  const ThemeColorPalette$Form({
+    @required this.draft,
+    @required this.actionRequired,
+    @required this.completed,
+    @required this.rejected,
+  });
+
   /// Form color palette
   const ThemeColorPalette$Form.light():
     draft = const Color(0xffed6e19),
@@ -428,6 +518,10 @@ class ThemeColorPalette$Form {
 
 /// Notification color palette
 class ThemeColorPalette$Notification {
+  const ThemeColorPalette$Notification({
+    @required this.countBubbleColor,
+  });
+
   /// Notification color palette
   const ThemeColorPalette$Notification.light():
     countBubbleColor = const Color(0xfff26716);
@@ -444,6 +538,16 @@ class ThemeColorPalette$Notification {
 
 /// Project time line color palette
 class ThemeColorPalette$ProjectTimeline {
+  const ThemeColorPalette$ProjectTimeline({
+    @required this.plannedLight,
+    @required this.planned,
+    @required this.start,
+    @required this.completed,
+    @required this.today,
+    @required this.active,
+    @required this.progress,
+  });
+
   /// Project time line color palette
   const ThemeColorPalette$ProjectTimeline.light():
     plannedLight = const Color(0xffeef3f8),
@@ -484,6 +588,11 @@ class ThemeColorPalette$ProjectTimeline {
 
 /// Pin theme
 class ThemeColorPalette$Pin {
+  const ThemeColorPalette$Pin({
+    @required this.iconColor,
+    @required this.disabledBackgroundColor,
+  });
+
   /// Pin theme
   const ThemeColorPalette$Pin.light():
     iconColor = const Color(0xffffffff),
@@ -504,6 +613,11 @@ class ThemeColorPalette$Pin {
 
 /// 
 class ThemeColorPalette$AppBarTheme {
+  const ThemeColorPalette$AppBarTheme({
+    @required this.color,
+    @required this.foregroundColor,
+  });
+
   /// 
   const ThemeColorPalette$AppBarTheme.light():
     color = const Color(0xff5182bb),
@@ -526,6 +640,10 @@ class ThemeColorPalette$AppBarTheme {
 
 /// 
 class ThemeColorPalette$BottomAppBarTheme {
+  const ThemeColorPalette$BottomAppBarTheme({
+    @required this.color,
+  });
+
   /// 
   const ThemeColorPalette$BottomAppBarTheme.light():
     color = const Color(0xfff8f8f8);
