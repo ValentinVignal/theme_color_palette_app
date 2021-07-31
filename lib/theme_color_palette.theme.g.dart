@@ -28,6 +28,7 @@ extension ThemesExtension on Themes {
 
 /// The Theme Color Palette
 class ThemeColorPalette {
+  /// The Theme Color Palette
   const ThemeColorPalette({
     @required this.accentColor,
     @required this.primaryColor,
@@ -169,6 +170,7 @@ class ThemeColorPalette {
 
 /// The different text emphasis
 class ThemeColorPalette$TextEmphasis {
+  /// The different text emphasis
   const ThemeColorPalette$TextEmphasis({
     @required this.accent,
     @required this.success,
@@ -225,6 +227,7 @@ class ThemeColorPalette$TextEmphasis {
 
 /// Reversed text emphasis
 class ThemeColorPalette$TextEmphasis$Reversed {
+  /// Reversed text emphasis
   const ThemeColorPalette$TextEmphasis$Reversed({
     @required this.high,
     @required this.medium,
@@ -260,6 +263,7 @@ class ThemeColorPalette$TextEmphasis$Reversed {
 
 /// The different icon emphasis
 class ThemeColorPalette$IconEmphasis {
+  /// The different icon emphasis
   const ThemeColorPalette$IconEmphasis({
     @required this.high,
     @required this.medium,
@@ -300,6 +304,7 @@ class ThemeColorPalette$IconEmphasis {
 
 /// Reversed icon emphasis
 class ThemeColorPalette$IconEmphasis$Reversed {
+  /// Reversed icon emphasis
   const ThemeColorPalette$IconEmphasis$Reversed({
     @required this.high,
     @required this.medium,
@@ -335,6 +340,7 @@ class ThemeColorPalette$IconEmphasis$Reversed {
 
 /// Borders
 class ThemeColorPalette$Border {
+  /// Borders
   const ThemeColorPalette$Border({
     @required this.high,
     @required this.medium,
@@ -366,6 +372,7 @@ class ThemeColorPalette$Border {
 
 /// Backgrounds
 class ThemeColorPalette$Background {
+  /// Backgrounds
   const ThemeColorPalette$Background({
     @required this.disabled,
     @required this.backgroundColor,
@@ -415,6 +422,7 @@ class ThemeColorPalette$Background {
 
 /// Floating action button
 class ThemeColorPalette$FloatingActionButton {
+  /// Floating action button
   const ThemeColorPalette$FloatingActionButton({
     @required this.disabledColor,
     @required this.backgroundColor,
@@ -453,6 +461,7 @@ class ThemeColorPalette$FloatingActionButton {
 
 /// Task color palette
 class ThemeColorPalette$Task {
+  /// Task color palette
   const ThemeColorPalette$Task({
     @required this.notStarted,
     @required this.workInProgress,
@@ -483,6 +492,7 @@ class ThemeColorPalette$Task {
 
 /// Form color palette
 class ThemeColorPalette$Form {
+  /// Form color palette
   const ThemeColorPalette$Form({
     @required this.draft,
     @required this.actionRequired,
@@ -518,6 +528,7 @@ class ThemeColorPalette$Form {
 
 /// Notification color palette
 class ThemeColorPalette$Notification {
+  /// Notification color palette
   const ThemeColorPalette$Notification({
     @required this.countBubbleColor,
   });
@@ -538,6 +549,7 @@ class ThemeColorPalette$Notification {
 
 /// Project time line color palette
 class ThemeColorPalette$ProjectTimeline {
+  /// Project time line color palette
   const ThemeColorPalette$ProjectTimeline({
     @required this.plannedLight,
     @required this.planned,
@@ -588,6 +600,7 @@ class ThemeColorPalette$ProjectTimeline {
 
 /// Pin theme
 class ThemeColorPalette$Pin {
+  /// Pin theme
   const ThemeColorPalette$Pin({
     @required this.iconColor,
     @required this.disabledBackgroundColor,
@@ -613,6 +626,7 @@ class ThemeColorPalette$Pin {
 
 /// 
 class ThemeColorPalette$AppBarTheme {
+  /// 
   const ThemeColorPalette$AppBarTheme({
     @required this.color,
     @required this.foregroundColor,
@@ -640,6 +654,7 @@ class ThemeColorPalette$AppBarTheme {
 
 /// 
 class ThemeColorPalette$BottomAppBarTheme {
+  /// 
   const ThemeColorPalette$BottomAppBarTheme({
     @required this.color,
   });

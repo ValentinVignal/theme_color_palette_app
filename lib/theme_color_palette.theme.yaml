@@ -31,6 +31,10 @@
 #       - w700, bold
 #       - w800, extraBold
 #       - w900, black
+# - bool
+#     A boolean, the different values are:
+#       - true
+#       - false
 
 # .flutter:
 #   `.flutter` property is used when a value is used to sed the Flutter Material theme (ex: cardColor).
