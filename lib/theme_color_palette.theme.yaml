@@ -35,6 +35,10 @@
 #     A boolean, the different values are:
 #       - true
 #       - false
+# - brightness
+#     The brightness values are:
+#       - light
+#       - dark
 
 # .flutter:
 #   `.flutter` property is used when a value is used to sed the Flutter Material theme (ex: cardColor).
@@ -112,6 +116,12 @@
 .themed:
   # Themed values are values that change between the different themes
   # The default theme must ALWAYS be specified
+  brightness:
+    .description: Global brightness of the theme
+    .type: brightness
+    .flutter: theme.brightness
+    light: light
+    dark: dark
   accentColor:
     .description: The accent Color
     .flutter: theme.accentColor

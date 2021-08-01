@@ -30,6 +30,7 @@ extension ThemesExtension on Themes {
 class ThemeColorPalette {
   /// The Theme Color Palette
   const ThemeColorPalette({
+    @required this.brightness,
     @required this.accentColor,
     @required this.primaryColor,
     @required this.primaryColorLight,
@@ -53,6 +54,7 @@ class ThemeColorPalette {
 
   /// The Theme Color Palette
   const ThemeColorPalette.light():
+    brightness = Brightness.light,
     accentColor = const Color(0xff2864ac),
     primaryColor = const Color(0xff5182bb),
     primaryColorLight = const Color(0xffd5e0ee),
@@ -74,6 +76,7 @@ class ThemeColorPalette {
     bottomAppBarTheme = const ThemeColorPalette$BottomAppBarTheme.light();
   /// The Theme Color Palette
   const ThemeColorPalette.dark():
+    brightness = Brightness.dark,
     accentColor = const Color(0xff699fcf),
     primaryColor = const Color(0xffc1dbef),
     primaryColorLight = const Color(0xff2c2c2c),
@@ -119,6 +122,9 @@ class ThemeColorPalette {
   /// Thickness of the Dividers
   static const divider_thickness = 2.0;
 
+  /// Global brightness of the theme
+  @Deprecated('Use theme.brightness instead')
+  final Brightness brightness;
   /// The accent Color
   @Deprecated('Use theme.accentColor instead')
   final Color accentColor;
