@@ -50,6 +50,11 @@ class ThemeColorPalette {
     @required this.hoverColor,
     @required this.appBarTheme,
     @required this.bottomAppBarTheme,
+    @required this.toggleableActiveColor,
+    @required this.tooltipTheme,
+    @required this.popupMenuTheme,
+    @required this.dividerTheme,
+    @required this.selectedRowColor,
   });
 
   /// The Theme Color Palette
@@ -73,7 +78,12 @@ class ThemeColorPalette {
     pin = const ThemeColorPalette$Pin.light(),
     hoverColor = const Color(0x0a000000),
     appBarTheme = const ThemeColorPalette$AppBarTheme.light(),
-    bottomAppBarTheme = const ThemeColorPalette$BottomAppBarTheme.light();
+    bottomAppBarTheme = const ThemeColorPalette$BottomAppBarTheme.light(),
+    toggleableActiveColor = const Color(0xff2864ac),
+    tooltipTheme = const ThemeColorPalette$TooltipTheme.light(),
+    popupMenuTheme = const ThemeColorPalette$PopupMenuTheme.light(),
+    dividerTheme = const ThemeColorPalette$DividerTheme.light(),
+    selectedRowColor = const Color(0x142864ac);
   /// The Theme Color Palette
   const ThemeColorPalette.dark():
     brightness = Brightness.dark,
@@ -95,7 +105,12 @@ class ThemeColorPalette {
     pin = const ThemeColorPalette$Pin.dark(),
     hoverColor = const Color(0xa699fcf),
     appBarTheme = const ThemeColorPalette$AppBarTheme.dark(),
-    bottomAppBarTheme = const ThemeColorPalette$BottomAppBarTheme.dark();
+    bottomAppBarTheme = const ThemeColorPalette$BottomAppBarTheme.dark(),
+    toggleableActiveColor = const Color(0xffc1dbef),
+    tooltipTheme = const ThemeColorPalette$TooltipTheme.dark(),
+    popupMenuTheme = const ThemeColorPalette$PopupMenuTheme.dark(),
+    dividerTheme = const ThemeColorPalette$DividerTheme.dark(),
+    selectedRowColor = const Color(0x14699fcf);
 
   /// Default radius
   static const radius = 4.0;
@@ -169,6 +184,21 @@ class ThemeColorPalette {
   final ThemeColorPalette$AppBarTheme appBarTheme;
   /// 
   final ThemeColorPalette$BottomAppBarTheme bottomAppBarTheme;
+  /// Toggleable active color
+  @Deprecated('Use theme.toggleableActiveColor instead')
+  final Color toggleableActiveColor;
+  /// Tooltip theme
+  @Deprecated('Use theme.tooltipTheme instead')
+  final ThemeColorPalette$TooltipTheme tooltipTheme;
+  /// Popup menu theme
+  @Deprecated('Use theme.popupMenuTheme instead')
+  final ThemeColorPalette$PopupMenuTheme popupMenuTheme;
+  /// Divider theme
+  @Deprecated('Use theme.dividerTheme instead')
+  final ThemeColorPalette$DividerTheme dividerTheme;
+  /// Selected row color
+  @Deprecated('Use theme.selectedRowColor instead')
+  final Color selectedRowColor;
 }
 
 
@@ -675,6 +705,162 @@ class ThemeColorPalette$BottomAppBarTheme {
   /// Color of the bottom app bar
   @Deprecated('Use theme.bottomAppBarTheme.color instead')
   final Color color;
+}
+
+
+// -------------------- ThemeColorPalette$TooltipTheme --------------------
+
+/// Tooltip theme
+@Deprecated('Use theme.tooltipTheme instead')
+class ThemeColorPalette$TooltipTheme {
+  /// Tooltip theme
+  const ThemeColorPalette$TooltipTheme({
+    @required this.decoration,
+    @required this.textStyle,
+  });
+
+  /// Tooltip theme
+  const ThemeColorPalette$TooltipTheme.light():
+    decoration = const ThemeColorPalette$TooltipTheme$Decoration.light(),
+    textStyle = const ThemeColorPalette$TooltipTheme$TextStyle.light();
+  /// Tooltip theme
+  const ThemeColorPalette$TooltipTheme.dark():
+    decoration = const ThemeColorPalette$TooltipTheme$Decoration.dark(),
+    textStyle = const ThemeColorPalette$TooltipTheme$TextStyle.dark();
+
+  /// Tooltip decoration
+  @Deprecated('Use theme.decoration instead')
+  final ThemeColorPalette$TooltipTheme$Decoration decoration;
+  /// Tooltip text textStyle
+  @Deprecated('Use theme.tooltipTheme.textStyle instead')
+  final ThemeColorPalette$TooltipTheme$TextStyle textStyle;
+}
+
+
+// -------------------- ThemeColorPalette$TooltipTheme$Decoration --------------------
+
+/// Tooltip decoration
+@Deprecated('Use theme.decoration instead')
+class ThemeColorPalette$TooltipTheme$Decoration {
+  /// Tooltip decoration
+  const ThemeColorPalette$TooltipTheme$Decoration({
+    @required this.color,
+    @required this.borderRadius,
+  });
+
+  /// Tooltip decoration
+  const ThemeColorPalette$TooltipTheme$Decoration.light():
+    color = const Color(0xff000000),
+    borderRadius = 4.0;
+  /// Tooltip decoration
+  const ThemeColorPalette$TooltipTheme$Decoration.dark():
+    color = const Color(0xffffffff),
+    borderRadius = 4.0;
+
+  /// Tooltip decoration color
+  @Deprecated('Use theme.tooltipTheme.decoration instead')
+  final Color color;
+  /// Tooltip decoration radius
+  @Deprecated('Use theme.tooltipTheme.decoration instead')
+  final double borderRadius;
+}
+
+
+// -------------------- ThemeColorPalette$TooltipTheme$TextStyle --------------------
+
+/// Tooltip text textStyle
+@Deprecated('Use theme.tooltipTheme.textStyle instead')
+class ThemeColorPalette$TooltipTheme$TextStyle {
+  /// Tooltip text textStyle
+  const ThemeColorPalette$TooltipTheme$TextStyle({
+    @required this.color,
+  });
+
+  /// Tooltip text textStyle
+  const ThemeColorPalette$TooltipTheme$TextStyle.light():
+    color = const Color(0xffffffff);
+  /// Tooltip text textStyle
+  const ThemeColorPalette$TooltipTheme$TextStyle.dark():
+    color = const Color(0xff000000);
+
+  /// Tooltip text textStyle color
+  @Deprecated('Use theme.tooltipTheme.textStyle.color instead')
+  final Color color;
+}
+
+
+// -------------------- ThemeColorPalette$PopupMenuTheme --------------------
+
+/// Popup menu theme
+@Deprecated('Use theme.popupMenuTheme instead')
+class ThemeColorPalette$PopupMenuTheme {
+  /// Popup menu theme
+  const ThemeColorPalette$PopupMenuTheme({
+    @required this.textStyle,
+  });
+
+  /// Popup menu theme
+  const ThemeColorPalette$PopupMenuTheme.light():
+    textStyle = const ThemeColorPalette$PopupMenuTheme$TextStyle.light();
+  /// Popup menu theme
+  const ThemeColorPalette$PopupMenuTheme.dark():
+    textStyle = const ThemeColorPalette$PopupMenuTheme$TextStyle.dark();
+
+  /// Popup menu theme text style
+  @Deprecated('Use theme.popupMenuTheme.textStyle instead')
+  final ThemeColorPalette$PopupMenuTheme$TextStyle textStyle;
+}
+
+
+// -------------------- ThemeColorPalette$PopupMenuTheme$TextStyle --------------------
+
+/// Popup menu theme text style
+@Deprecated('Use theme.popupMenuTheme.textStyle instead')
+class ThemeColorPalette$PopupMenuTheme$TextStyle {
+  /// Popup menu theme text style
+  const ThemeColorPalette$PopupMenuTheme$TextStyle({
+    @required this.color,
+  });
+
+  /// Popup menu theme text style
+  const ThemeColorPalette$PopupMenuTheme$TextStyle.light():
+    color = const Color(0xff2864ac);
+  /// Popup menu theme text style
+  const ThemeColorPalette$PopupMenuTheme$TextStyle.dark():
+    color = const Color(0xff699fcf);
+
+  /// Popup menu theme text style color
+  @Deprecated('Use theme.popupMenuTheme.textStyle.color instead')
+  final Color color;
+}
+
+
+// -------------------- ThemeColorPalette$DividerTheme --------------------
+
+/// Divider theme
+@Deprecated('Use theme.dividerTheme instead')
+class ThemeColorPalette$DividerTheme {
+  /// Divider theme
+  const ThemeColorPalette$DividerTheme({
+    @required this.color,
+    @required this.thickness,
+  });
+
+  /// Divider theme
+  const ThemeColorPalette$DividerTheme.light():
+    color = const Color(0x0a000000),
+    thickness = 2.0;
+  /// Divider theme
+  const ThemeColorPalette$DividerTheme.dark():
+    color = const Color(0xff434343),
+    thickness = 2.0;
+
+  /// Divider color
+  @Deprecated('Use theme.dividerColor instead')
+  final Color color;
+  /// Divider thickness
+  @Deprecated('Use theme.dividerTheme.thickness instead')
+  final double thickness;
 }
 
 

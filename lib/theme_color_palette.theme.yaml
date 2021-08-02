@@ -468,3 +468,71 @@
       light:
         import: background.canvas
       dark: ff2e2e2e
+  toggleableActiveColor:
+    .type: color
+    .description: Toggleable active color
+    .flutter: theme.toggleableActiveColor
+    light:
+      import: accentColor
+    dark:
+      import: primaryColor
+  tooltipTheme:
+    .description: Tooltip theme
+    .flutter: theme.tooltipTheme
+    decoration:
+      .description: Tooltip decoration
+      .flutter: theme.decoration
+      color:
+        .type: color
+        .description: Tooltip decoration color
+        .flutter: theme.tooltipTheme.decoration
+        light: ff000000
+        dark: ffffffff
+      borderRadius:
+        .type: double
+        .description: Tooltip decoration radius
+        .flutter: theme.tooltipTheme.decoration
+        light:
+          import: .shared.radius
+    textStyle:
+      .description: Tooltip text textStyle
+      .flutter: theme.tooltipTheme.textStyle
+      color:
+        .description: Tooltip text textStyle color
+        .flutter: theme.tooltipTheme.textStyle.color
+        .type: color
+        light: ffffffff
+        dark: ff000000
+  popupMenuTheme:
+    .description: Popup menu theme
+    .flutter: theme.popupMenuTheme
+    textStyle:
+      .description: Popup menu theme text style
+      .flutter: theme.popupMenuTheme.textStyle
+      color:
+        .description: Popup menu theme text style color
+        .flutter: theme.popupMenuTheme.textStyle.color
+        .type: color
+        light:
+          import: accentColor
+  dividerTheme:
+    .description: Divider theme
+    .flutter: theme.dividerTheme
+    color:
+      .type: color
+      .flutter: theme.dividerColor
+      .description: Divider color
+      light: 0a000000
+      dark: ff434343
+    thickness:
+      .description: Divider thickness
+      .flutter: theme.dividerTheme.thickness
+      .type: double
+      light: 2
+  selectedRowColor:
+    .description: Selected row color
+    .flutter: theme.selectedRowColor
+    .type: color
+    light:
+      import: accentColor
+      withOpacity: 0.08
